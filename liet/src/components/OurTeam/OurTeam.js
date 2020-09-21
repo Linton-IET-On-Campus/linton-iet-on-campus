@@ -22,8 +22,8 @@ const Styles = styled.div`
 
 .btn-primary {
     color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
+    background-color: #F48E1F;
+    border-color: #F48E1F;
 }
 
 section {
@@ -32,7 +32,7 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: #F48E1F;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
@@ -121,12 +121,12 @@ section .section-title {
 
 .backside .card a {
     font-size: 18px;
-    color: #007b5e !important;
+    color: #F48E1F !important;
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #007b5e !important;
+    color: #F48E1F !important;
 }
 
 .frontside .card .card-body img {
