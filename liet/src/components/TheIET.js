@@ -85,11 +85,11 @@ Continually improve and adopt best practices.</Card.Body>
   </Card>
   <Card>
     <Card.Header>
-      <Accordion.Toggle as={Button} variant="link" eventKey="1"  class="values">
+      <Accordion.Toggle as={Button} variant="link" eventKey="2"  class="values">
       Teamwork
       </Accordion.Toggle>
     </Card.Header>
-    <Accordion.Collapse eventKey="1">
+    <Accordion.Collapse eventKey="2">
       <Card.Body>Encourage staff and volunteers to work together.
 Recognise the value of talented individuals working in teams.
 Be collaborative and partner with other organisations.</Card.Body>
