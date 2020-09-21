@@ -2,20 +2,20 @@
     {
         "id": 1,
         "icon": "fas fa-medal",
-        "title": "Demo for fun",
+        "title": "Strive for Excellency",
         "description": "Our club pushes your limit and strive for excellency."
     },
     {
         "id": 2,
         "icon": "fas fa-robot",
-        "title": "Hello Jordon",
+        "title": "Learn Latest Technology",
         "description": "Learn about latest technology and IR 4.0."
     },
     {
         "id": 3,
         "icon": "fas fa-network-wired",
         "title": "Expand Your Network",
-        "description": "Hi Harris"
+        "description": "Meet people from other campus and broaden your vision."
     },
     {
         "id": 4,
