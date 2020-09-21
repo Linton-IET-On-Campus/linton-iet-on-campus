@@ -2,6 +2,6 @@ import React from 'react'
 
 export const StudHelpsStud = () => (
     <div>
-    Student helps student
+    Stud Help Student
     </div>
 )

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import logo from '../assets/logo.png';
 
 const Styles = styled.div`
-
+    
 
 
     .navbar-brand, .navbar-nav .nav-link {
@@ -37,14 +37,14 @@ export const NavigationBar = () => (
                 <Nav className="ml-auto">
                     <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
                         <NavDropdown title="About" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="about/linton-iet-on-campus">LIET</NavDropdown.Item>
-                            <NavDropdown.Item href="about/committee">Committee</NavDropdown.Item>
-                            <NavDropdown.Item href="about/credits">Credits</NavDropdown.Item>
-                            <NavDropdown.Item href="about/credits">Graffiti</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/linton-iet-on-campus">LIET</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/committee">Committee</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/credits">Credits</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/graffiti">Graffiti</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="about/student-helps-student">Student Helps Student</NavDropdown.Item>
-                            <NavDropdown.Item href="about/intern-job-opportunity">Intern/Job</NavDropdown.Item>
-                            <NavDropdown.Item href="about/advertisement">Collaboration</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/student-helps-student">Student Helps Student</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/intern-job-opportunity">Intern/Job</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/collaboration">Collaboration</NavDropdown.Item>
                         </NavDropdown>
                     <Nav.Item><Nav.Link href="/blog">Blog</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/event">Event</Nav.Link></Nav.Item>

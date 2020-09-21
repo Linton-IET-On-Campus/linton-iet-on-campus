@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const About = () => (
+export const Graffiti = () => (
     <div>
-    hello world
+    Graffiti
     </div>
 )
