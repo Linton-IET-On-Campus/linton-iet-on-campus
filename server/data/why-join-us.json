@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "icon": "fas fa-medal",
+        "title": "Strive for Excellency",
+        "description": "Our club pushes your limit and strive for excellency."
+    },
+    {
+        "id": 2,
+        "icon": "fas fa-robot",
+        "title": "Learn Latest Technology",
+        "description": "Learn about latest technology and IR 4.0."
+    },
+    {
+        "id": 3,
+        "icon": "fas fa-network-wired",
+        "title": "Expand Your Network",
+        "description": "Meet people from other campus and broaden your vision."
+    },
+    {
+        "id": 4,
+        "icon": "fas fa-industry",
+        "title": "Site visit",
+        "description": "Visit factories and industries that are related to your studies."
+    },
+    {
+        "id": 5,
+        "icon": "fas fa-chalkboard-teacher",
+        "title": "Academic Support",
+        "description": "Need helps for your studies? No worry, we got your back."
+    },
+    {
+        "id": 6,
+        "icon": "fas fa-briefcase",
+        "title": "Career Opportunity",
+        "description": "We collaborate with industry and prepare our member to be job-ready. "
+    }
+]

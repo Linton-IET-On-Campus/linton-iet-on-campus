@@ -263,7 +263,7 @@ const Styles = styled.div`
 export const WhyJoinUs = () => (
     <Styles>
 
-        <section class="we-offer-area text-center bg-gray">
+      <section class="we-offer-area text-center bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -284,55 +284,6 @@ export const WhyJoinUs = () => (
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-robot"></i>
-                            <h4>Learn Latest Technology</h4>
-                            <p>
-                                Learn about latest technology and IR 4.0.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                        <i class="fas fa-network-wired"></i>                            
-                        <h4>Expand Your Network</h4>
-                            <p>
-                                Meet people from other campus and broaden your vision. 
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-industry"></i>
-                            <h4>Site visit</h4>
-                            <p>
-                                Visit factories and industries that are related to your studies. 
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                            <h4>Academic Support</h4>
-                            <p>
-                                Need helps for your studies? No worry, we got your back. 
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-briefcase"></i>
-                            <h4>Career Opportunity</h4>
-                            <p>
-                                We collaborate with industry and prepare our member to be job-ready. 
-                            </p>
-                        </div>
-                    </div>
                 </div>
         </div>
     </section>
