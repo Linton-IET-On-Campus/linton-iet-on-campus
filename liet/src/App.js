@@ -11,15 +11,11 @@ import { NoMatch } from './pages/NoMatch';
 
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
-import { Jumbotron } from './components/Jumbotron';
-import { Footer } from './components/Footer'
 
 function App() {
   return (
   <React.Fragment>
     <NavigationBar />
-    <Jumbotron />
-    <Layout>
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -30,9 +26,9 @@ function App() {
           <Route path="shop" component={Shop} />
           <Route component={NoMatch} />
         </Switch>
-      </Router>
-    </Layout>
-    <Footer />
+      </Router> 
+      <Layout />
+    
   </React.Fragment>
   );
 }

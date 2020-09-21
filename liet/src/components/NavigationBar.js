@@ -1,36 +1,51 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import styled from 'styled-components';
+import logo from '../assets/logo.png';
 
 const Styles = styled.div`
-    .navbar{
-        background: #222;
-    }
 
- 
+
 
     .navbar-brand, .navbar-nav .nav-link {
         color: #bbb;
         &:hover{
             color: white;
         }
+    
     }
 
-    .nav-link{
-        position: relative;
-        float: left;
+    .navbar-collapse {
+        flex-grow: 0.5 !important;
     }
 `;
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar expand="lg">
-            <Navbar.Brand href="/">LIET</Navbar.Brand>
+        <Navbar bg="dark" variant="dark" expand="lg">
+            <Navbar.Brand href="/">  
+            <img
+                alt=""
+                src={logo}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+            />{' '}
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+                        <NavDropdown title="About" id="collasible-nav-dropdown">
+                            <NavDropdown.Item href="about/linton-iet-on-campus">LIET</NavDropdown.Item>
+                            <NavDropdown.Item href="about/committee">Committee</NavDropdown.Item>
+                            <NavDropdown.Item href="about/credits">Credits</NavDropdown.Item>
+                            <NavDropdown.Item href="about/credits">Graffiti</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="about/student-helps-student">Student Helps Student</NavDropdown.Item>
+                            <NavDropdown.Item href="about/intern-job-opportunity">Intern/Job</NavDropdown.Item>
+                            <NavDropdown.Item href="about/advertisement">Collaboration</NavDropdown.Item>
+                        </NavDropdown>
                     <Nav.Item><Nav.Link href="/blog">Blog</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/event">Event</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/shop">Shop</Nav.Link></Nav.Item>
@@ -38,5 +53,4 @@ export const NavigationBar = () => (
             </Navbar.Collapse>
         </Navbar>
     </Styles>
-
 )
