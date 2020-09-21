@@ -55,7 +55,7 @@
         "email": "mailto:jasonl@student.ktgeducation.edu.my"
     },
     {
-        "id": 6,
+        "id": 7,
         "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_1.jpg?raw=true",
         "name": "Lee Kah Hin​",
         "role": "Multimedia & Design Officer​",
@@ -64,7 +64,7 @@
         "email": "mailto:kamenrider00791@gmail.com"
     },
     {
-        "id": 6,
+        "id": 8,
         "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_4.jpg?raw=true",
         "name": "Jordan Wong Pang Wei​​",
         "role": "Multimedia & Design Officer​",
@@ -73,7 +73,7 @@
         "email": "mailto:jordan1910@student.ktgeducation.edu.my"
     },
     {
-        "id": 7,
+        "id": 9,
         "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/master/liet/src/assets/tayjer.png?raw=true",
         "name": "Tay Chee Jer​​​",
         "role": "Logistics & Transportation Officer​​",
@@ -82,12 +82,12 @@
         "email": "mailto:tayjer530@gmail.com"
     },
     {
-        "id": 8,
-        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/master/liet/src/assets/tayjer.png?raw=true",
+        "id": 10,
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/master/liet/src/assets/ziheng.png?raw=true",
         "name": "Lim Zi Heng​​​​",
         "role": "Committee",
-        "description": "It is not enough to do your best: you must KNOW what to do, and THEN do your best.",
+        "description": "Instead of worrying about what you cannot control, shift your energy to what you can create.",
         "whatsapp": "https://wa.me/+60108650984",
-        "email": "mailto:tayjer530@gmail.com"
+        "email": "mailto:lim0315@student.ktgeducation.edu.my"
     }
 ]
