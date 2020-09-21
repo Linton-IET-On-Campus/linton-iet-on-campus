@@ -5,7 +5,9 @@ import logo from '../assets/logo.png';
 
 const Styles = styled.div`
     
-
+    .navbar{
+        z-index: 1;
+    }
 
     .navbar-brand, .navbar-nav .nav-link {
         color: #bbb;
