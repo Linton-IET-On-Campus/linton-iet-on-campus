@@ -47,7 +47,7 @@
     },
     {
         "id": 6,
-        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_3.jpg?raw=true",
+        "img": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t1.0-9/104448748_2671518173066264_1304085722214190135_o.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=SKSQUkPb2IAAX-A6smi&_nc_ht=scontent.fmkz1-1.fna&oh=931ee5c4eeb6cb96736affa7b6017b8e&oe=5F8F18BD",
         "name": "Jason Lee​ A/L Pandak",
         "role": "Treasurer",
         "description": "Technology, here's where we begin!",
@@ -74,11 +74,20 @@
     },
     {
         "id": 7,
-        "img": "",
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/master/liet/src/assets/tayjer.png?raw=true",
         "name": "Tay Chee Jer​​​",
         "role": "Logistics & Transportation Officer​​",
-        "description": "Enjoy your stay here and have fun.",
+        "description": "It is not enough to do your best: you must KNOW what to do, and THEN do your best.",
         "whatsapp": "https://wa.me/601110609711",
         "email": "mailto:tayjer530@gmail.com"
     },
+    {
+        "id": 8,
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/master/liet/src/assets/tayjer.png?raw=true",
+        "name": "Lim Zi Heng​​​​",
+        "role": "Committee",
+        "description": "It is not enough to do your best: you must KNOW what to do, and THEN do your best.",
+        "whatsapp": "https://wa.me/+60108650984",
+        "email": "mailto:tayjer530@gmail.com"
+    }
 ]
