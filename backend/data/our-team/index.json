@@ -1,0 +1,84 @@
+[
+    {
+        "id": 1,
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_7.jpg?raw=true",
+        "name": "Dr. Abdul Rahim Sadiq Batcha​",
+        "role": "Advisor",
+        "description": "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.",
+        "whatsapp": "https://wa.me/60178899260",
+        "email": "mailto:sadiq@ktg.edu.my"
+
+    },
+    {
+        "id": 2,
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_8.jpg?raw=true",
+        "name": "Dr. Mohamad Rizaldy Ery​​",
+        "role": "Advisor",
+        "description": "Of all things, I liked books best.",
+        "whatsapp": "https://wa.me/601125431579",
+        "email": "mailto:ery1@ktg.edu.my"
+    },
+    {
+        "id": 3,
+        "img": "https://avatars1.githubusercontent.com/u/31881261?s=460&u=a3f427ed49b0dc7aa20718ee4abed877c80299b7&v=4",
+        "name": "Jehovah Yii Zui Hon​​",
+        "role": "President",
+        "description": "Lone🐺, Jesus ✝️ Follower ,👨🏻‍💻Coder,😋Foodie, Personal Website: https://hovahyii.github.io/portfolio-v2/",
+        "whatsapp": "https://wa.me/601110501375",
+        "email": "mailto:hovahyii@gmail.com"
+    },
+    {
+        "id": 4,
+        "img": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t1.0-9/90099130_2287879581504932_416084092195438592_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=eQ_mqEC_ZjAAX89ljp7&_nc_ht=scontent.fmkz1-1.fna&oh=150293d8a48671412760cd1e6321cfe8&oe=5F8E457E",
+        "name": "Patrick Kong Cheh Hong​​​",
+        "role": "Vice President​",
+        "description": "Engineers like to solve problems. If there are no problems handily available, they will create their own problems.",
+        "whatsapp": "https://wa.me/60128841538",
+        "email": "mailto:patrickkong1999@gmail.com"
+    },
+    {
+        "id": 5,
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_2.jpg?raw=true",
+        "name": "Vincent Tang Wei Hang​​​​",
+        "role": "Secretary​",
+        "description": "When you want to know how things really work, study them when they're coming apart.",
+        "whatsapp": "https://wa.me/60164178564",
+        "email": "mailto:tangvincent00@gmail.com"
+    },
+    {
+        "id": 6,
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_3.jpg?raw=true",
+        "name": "Jason Lee​ A/L Pandak",
+        "role": "Treasurer",
+        "description": "Technology, here's where we begin!",
+        "whatsapp": "https://wa.me/60173456571",
+        "email": "mailto:jasonl@student.ktgeducation.edu.my"
+    },
+    {
+        "id": 6,
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_1.jpg?raw=true",
+        "name": "Lee Kah Hin​",
+        "role": "Multimedia & Design Officer​",
+        "description": "Believe in your dreams and implement them.",
+        "whatsapp": "https://wa.me/60177360822",
+        "email": "mailto:kamenrider00791@gmail.com"
+    },
+    {
+        "id": 6,
+        "img": "https://github.com/Linton-IET-On-Campus/linton-iet-on-campus/blob/8f4f364158c708040616c6012367837c5fb9b577/images/person_4.jpg?raw=true",
+        "name": "Jordan Wong Pang Wei​​",
+        "role": "Multimedia & Design Officer​",
+        "description": "Enjoy your stay here and have fun.",
+        "whatsapp": "https://wa.me/601153381019",
+        "email": "mailto:jordan1910@student.ktgeducation.edu.my"
+    },
+    {
+        "id": 7,
+        "img": "",
+        "name": "Tay Chee Jer​​​",
+        "role": "Logistics & Transportation Officer​​",
+        "description": "Enjoy your stay here and have fun.",
+        "whatsapp": "https://wa.me/601110609711",
+        "email": "mailto:tayjer530@gmail.com"
+    },
+]

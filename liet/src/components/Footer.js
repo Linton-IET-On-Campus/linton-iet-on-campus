@@ -42,7 +42,7 @@ export const Footer = () => (
             <h4>About</h4>
             <ui className="list-unstyled">
             <li>Committee</li>
-              <li>Credit</li>
+              <li>Credits</li>
               <li>Graffiti</li>
             </ui>
           </Col>
