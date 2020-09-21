@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import axios from "axios";
+import WhyJoinUsGrid from './WhyJoinUsGrid';
 
 const Styles = styled.div`
 
@@ -260,9 +262,26 @@ const Styles = styled.div`
 `;
 
 
-export const WhyJoinUs = () => (
-    <Styles>
+export const WhyJoinUs = () => {
 
+  const [items, setItems] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const fetchItems = async () => {
+      const  result = await axios(
+          `https://raw.githubusercontent.com/Linton-IET-On-Campus/linton-iet-on-campus/master/server/data/why-join-us.json`
+        )
+        console.log(result.data)
+
+        setItems(result.data)
+        setIsLoading(false)
+      }
+      fetchItems()
+    },[])
+
+  return(
+    <Styles>
       <section class="we-offer-area text-center bg-gray">
         <div class="container">
             <div class="row">
@@ -273,22 +292,11 @@ export const WhyJoinUs = () => (
                     </div>
                 </div>
             </div>
-                <div class="row our-offer-items less-carousel">
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-medal"></i>
-                            <h4>Strive for Excellency</h4>
-                            <p>
-                                Our club pushes your limit and strive for excellency.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+             <WhyJoinUsGrid isLoading={isLoading} items={items}/>
         </div>
     </section>
 
-
   </Styles>
+  )
 
-)
+}
