@@ -9,6 +9,10 @@ const Styles = styled.div`
     h2{
         text-align: center;
     }
+    
+    .container{
+        margin: 10px;
+    }
 
  
 `;

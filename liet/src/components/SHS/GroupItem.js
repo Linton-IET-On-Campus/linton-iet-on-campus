@@ -6,7 +6,7 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem';
 const GroupItem = ({ item }) => {
   return (
     <Card>
-        <Card.Img variant="top" src={item.img} width="274px" height="160px"  />
+        <Card.Img variant="top" src={item.img} width="274px" height="160px" style={{ border: 'solid 0.5px grey' }} />
         <Card.Body>
             <Card.Title>{item.title}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">{item.field}</Card.Subtitle>
