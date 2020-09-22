@@ -14,8 +14,6 @@ const Styles = styled.div`
         padding: 10px;
     }
 
-   
-
  
 `;
 
