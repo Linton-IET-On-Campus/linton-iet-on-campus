@@ -6,8 +6,8 @@ import ChoosePlanGrid from './ChoosePlanGrid';
 const Styles = styled.div`
 
 .pricing-wrap {
-    padding-bottom: 20rem;
-    padding-top: 7rem; }
+    padding-bottom: 5rem;
+    padding-top: 8rem; }
     @media (max-width: 1199.98px) {
       .pricing-wrap {
         padding-bottom: 7em; } }
@@ -15,7 +15,6 @@ const Styles = styled.div`
       color: rgba(255, 255, 255, 0.7); }
   
   .pricing {
-    margin-top: -70%;
     background: #fff;
     padding: 30px;
     -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
@@ -29,9 +28,9 @@ const Styles = styled.div`
     @media (max-width: 1199.98px) {
       .pricing {
         margin-top: 0;
-        margin-bottom: 7rem; }
+        margin-bottom: 5rem; }
         .pricing:first-child {
-          margin-top: -70px; } }
+          margin-top: -20px; } }
     .pricing.pricing-popular {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -89,11 +88,15 @@ export const ChoosePlan = () => {
   return(
     <Styles>
 
+    <div class="pricing-wrap bg-grey pricing-counter" id="pricing-section" data-aos="fade">
         <div class="container">
              <ChoosePlanGrid isLoading={isLoading} items={items}/>
         </div>
+    </div>
 
   </Styles>
   )
 
 }
+
+

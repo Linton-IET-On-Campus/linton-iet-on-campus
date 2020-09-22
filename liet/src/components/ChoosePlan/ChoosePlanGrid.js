@@ -7,11 +7,12 @@ const ChoosePlanGrid = ({ items, isLoading }) => {
     return isLoading ? ( 
         <Spinner animation="grow" variant="warning" /> 
     ) : (
-    <div class="row no-gutters">
+        <div class="row no-gutters">
         {items.map((item) => (
                 <ChoosePlanItem key={item.id} item={item}></ChoosePlanItem>
             ))}
-    </div>
+        </div>
+
     )
 }
 
