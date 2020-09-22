@@ -64,6 +64,7 @@ const Styles = styled.div`
         font-size: 4rem; }
     .pricing .btn {
       border-width: 2px; }
+
 `;
 
 
@@ -88,11 +89,9 @@ export const ChoosePlan = () => {
   return(
     <Styles>
 
-    <section id="team" class="pb-5">
         <div class="container">
              <ChoosePlanGrid isLoading={isLoading} items={items}/>
         </div>
-    </section>
 
   </Styles>
   )

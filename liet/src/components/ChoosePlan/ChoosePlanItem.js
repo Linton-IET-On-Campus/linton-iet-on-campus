@@ -9,7 +9,7 @@ const ChoosePlanItem = ({ item }) => {
       <p class="description">{item.short}</p>
       <div class="price">
         <span>Starting at</span>
-        <strong>RM<em class="number" data-number={item.price}>0</em></strong>
+        <strong>RM<em class="number" data-number={item.price}>{item.price}</em></strong>
         <span>{item.duration}</span>
       </div>
       <p class="description-2 mb-5">{item.description}</p>

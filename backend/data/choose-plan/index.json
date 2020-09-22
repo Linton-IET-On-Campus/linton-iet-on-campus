@@ -4,7 +4,7 @@
         "price": "0",
         "title": "Club Membership Fee",
         "short": "To be Linton IET On Campus member",
-        "description": "<strong>WE DO NOT COLLECT ANY CLUB FEE, MONTHLY OR ANNUALLY.</strong> Fee will only be collected through events or activities.",
+        "description": "WE DO NOT COLLECT ANY CLUB FEE, MONTHLY OR ANNUALLY. Fee will only be collected through events or activities.",
         "duration": "Per Month"
 
     },
@@ -13,7 +13,7 @@
         "price": "260",
         "title": "IET UK Membership Fee",
         "short": "For whole duration of course (Until your graduation)",
-        "description": "If there are 10 students sign up together, then the total membership for  whole duration of course (until graduation), <strong>each person will only need to pay £30 (RM 160)</strong>",
+        "description": "If there are 10 students sign up together, then the total membership for  whole duration of course (until graduation), each person will only need to pay £30 (RM 160).",
         "duration": "Per Annual"
 
     },
