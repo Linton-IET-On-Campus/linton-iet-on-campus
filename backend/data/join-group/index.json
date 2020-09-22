@@ -9,7 +9,55 @@
         "day": "Every Monday",
         "time": "8pm onwards",
         "link": "https://chat.whatsapp.com/H7zqAfWb9Rk1FiZ4vh4Xxv",
-        "meet": ""
-    }
+        "meet": "#"
+    },
+    {
+        "id": 2,
+        "img": "https://i.pinimg.com/originals/44/4b/d0/444bd041e718b83ab63056c10461a544.png",
+        "title": "BIM with Autodesk REVIT",
+        "field": "Civil",
+        "description": "Building Information Modeling (BIM) is an intelligent 3D model-based process that gives architecture, engineering, and construction (AEC) professionals the insight and tools to more efficiently plan, design, construct, and manage buildings and infrastructure.",
+        "leader": "Patrick Kong",
+        "day": "Every Saturday and Sunday",
+        "time": "8pm to 9:30pm",
+        "link": "https://chat.whatsapp.com/LRnceS77wyk19SlfuXso1i",
+        "meet": "https://meet.google.com/cbe-gspa-zvt"
+    },
+    {
+        "id": 3,
+        "img": "https://i.pinimg.com/originals/44/4b/d0/444bd041e718b83ab63056c10461a544.png",
+        "title": "Web Development",
+        "field": "Software",
+        "description": "Learn full stack web development with MERN Stack",
+        "leader": "Hovah",
+        "day": "Every Tuesday",
+        "time": "8pm onwards",
+        "link": "https://chat.whatsapp.com/H6dqiFe023LCofKJW1fdf4",
+        "meet": "#"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ytimg.com/vi/LahDQYjtUgE/maxresdefault.jpg",
+        "title": "Learn Animation with Adobe Animate",
+        "field": "Software",
+        "description": "Animation is bonue skillset for game development, join us to learn",
+        "leader": "Hovah",
+        "day": "Every Sunday",
+        "time": "8pm to 9pm",
+        "link": "https://chat.whatsapp.com/H6dqiFe023LCofKJW1fdf4",
+        "meet": "#"
+    },
+    {
+        "id": 5,
+        "img": "https://blog.bismart.com/hubfs/20190903-MachineLearning.jpg",
+        "title": "Machine Learning",
+        "field": "Software",
+        "description": "Come and learn machine learning with us",
+        "leader": "Jordan Wong",
+        "day": "To be announced",
+        "time": "To be announced",
+        "link": "https://chat.whatsapp.com/JBL8kDOpatJ0KZuoxu7b7V",
+        "meet": "#"
+    },
  
 ]
