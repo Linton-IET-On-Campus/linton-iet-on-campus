@@ -2,6 +2,7 @@ import React from 'react';
 import Spinner from 'react-bootstrap/Spinner'
 import GroupItem from './GroupItem'
 import CardDeck from 'react-bootstrap/Card';
+import { CardColumns } from 'react-bootstrap';
 
 const GroupGrid = ({ items, isLoading }) => {
 
@@ -9,11 +10,11 @@ const GroupGrid = ({ items, isLoading }) => {
         <Spinner animation="grow" variant="warning" /> 
     ) : (
   
-        <CardDeck>
+        <CardColumns>
             {items.map((item) => (
                 <GroupItem key={item.id} item={item}></GroupItem>
             ))}
-       </CardDeck>
+       </CardColumns>
     
     )
 }

@@ -2,9 +2,9 @@
     {
         "id": 1,
         "img": "https://www.logolynx.com/images/logolynx/96/96784db947ed1c6f0fb4139bdcfc86e0.jpeg",
-        "title": "3D Modelling with Solidwork",
+        "title": "Solidwork",
         "field": "Mechanical, Electrical",
-        "description": "3D modelling is a must have skill for engineer, so join me to learn Solidwork together",
+        "description": "Learn 3D modelling with Solidwork",
         "leader": "Hovah",
         "day": "Every Monday",
         "time": "8pm onwards",
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "img": "https://i.pinimg.com/originals/44/4b/d0/444bd041e718b83ab63056c10461a544.png",
-        "title": "BIM with Autodesk REVIT",
+        "title": "Autodesk REVIT",
         "field": "Civil",
         "description": "Learn Building Information Modeling (BIM) using REVIT with us ",
         "leader": "Patrick Kong",
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "img": "https://i.ytimg.com/vi/LahDQYjtUgE/maxresdefault.jpg",
-        "title": "Learn Animation with Adobe Animate",
+        "title": "Adobe Animate",
         "field": "Software",
         "description": "Animation is bonue skillset for game development, join us to learn",
         "leader": "Hovah",
