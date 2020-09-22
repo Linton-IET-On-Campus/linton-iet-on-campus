@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from "axios";
 import GroupGrid from './GroupGrid';
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const Styles = styled.div`
 
@@ -11,8 +11,10 @@ const Styles = styled.div`
     }
     
     .container{
-        margin: 10px;
+        padding: 10px;
     }
+
+   
 
  
 `;

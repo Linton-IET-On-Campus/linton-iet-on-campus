@@ -5,8 +5,8 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem';
 
 const GroupItem = ({ item }) => {
   return (
-    <Card>
-        <Card.Img variant="top" src={item.img} width="274px" height="160px" style={{ border: 'solid 0.5px grey' }} />
+    <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={item.img} width="274px" height="160px"  />
         <Card.Body>
             <Card.Title>{item.title}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">{item.field}</Card.Subtitle>
@@ -19,10 +19,10 @@ const GroupItem = ({ item }) => {
             <ListGroupItem><i class="fas fa-calendar-day"></i> {item.day}</ListGroupItem>
             <ListGroupItem><i class="fas fa-clock"></i> {item.time}</ListGroupItem>
         </ListGroup>
-        <Card.Body>
+        <Card.Footer>
             <Card.Link href={item.link}>Join Group</Card.Link>
             <Card.Link href={item.meet}>Google Meet</Card.Link>
-        </Card.Body>
+        </Card.Footer>
     </Card>
   )
 }

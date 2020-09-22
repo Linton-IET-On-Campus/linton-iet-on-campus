@@ -8,13 +8,13 @@ const GroupGrid = ({ items, isLoading }) => {
     return isLoading ? ( 
         <Spinner animation="grow" variant="warning" /> 
     ) : (
-       
+  
         <CardDeck>
             {items.map((item) => (
                 <GroupItem key={item.id} item={item}></GroupItem>
             ))}
        </CardDeck>
-
+    
     )
 }
 
