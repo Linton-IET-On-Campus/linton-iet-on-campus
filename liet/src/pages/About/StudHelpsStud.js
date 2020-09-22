@@ -1,7 +1,20 @@
 import React from 'react'
+import styled from 'styled-components';
+
+import { Jumbotron } from '../../components/Jumbotron';
+import { Footer } from '../../components/Footer';
+
+const Styles = styled.div`
+
+`;
 
 export const StudHelpsStud = () => (
-    <div>
-    Stud Help Student
-    </div>
+    <Styles>
+
+   <Jumbotron />
+
+    <Footer />
+
+    </Styles>
+
 )

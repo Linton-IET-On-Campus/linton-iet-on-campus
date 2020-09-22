@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 const Styles = styled.div`
     
     .navbar{
-        z-index: 10;
+        z-index: 15;
 
     }
 
