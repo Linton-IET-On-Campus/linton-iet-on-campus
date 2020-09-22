@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "img": "Strive for Excellency",
+        "img": "https://www.logolynx.com/images/logolynx/96/96784db947ed1c6f0fb4139bdcfc86e0.jpeg",
         "title": "3D Modelling with Solidwork",
         "field": "Mechanical, Electrical",
         "description": "3D modelling is a must have skill for engineer, so join me to learn Solidwork together",
         "leader": "Hovah",
         "day": "Every Monday",
         "time": "8pm onwards",
-        "group-link": "https://chat.whatsapp.com/H7zqAfWb9Rk1FiZ4vh4Xxv",
-        "google-meet": ""
+        "link": "https://chat.whatsapp.com/H7zqAfWb9Rk1FiZ4vh4Xxv",
+        "meet": ""
     }
  
 ]

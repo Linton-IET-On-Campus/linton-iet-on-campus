@@ -40,7 +40,7 @@ export const Group = () => {
              <GroupGrid isLoading={isLoading} items={items}/>
         </Container>
 
-  </Styles>
+    </Styles>
   )
 
 }

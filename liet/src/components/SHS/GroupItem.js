@@ -15,13 +15,13 @@ const GroupItem = ({ item }) => {
       </Card.Text>
     </Card.Body>
     <ListGroup className="list-group-flush">
-        <ListGroupItem><i class="fas fa-user"></i> Person-in-Charge: {item.leader}</ListGroupItem>
-        <ListGroupItem><i class="fas fa-calendar-day"></i> Day: {item.day}</ListGroupItem>
-        <ListGroupItem><i class="fas fa-clock"></i> Time: {item.time}</ListGroupItem>
+        <ListGroupItem><i class="fas fa-user"></i> {item.leader}</ListGroupItem>
+        <ListGroupItem><i class="fas fa-calendar-day"></i> {item.day}</ListGroupItem>
+        <ListGroupItem><i class="fas fa-clock"></i> {item.time}</ListGroupItem>
     </ListGroup>
     <Card.Body>
-        <Card.Link href={item.group-link}>Join Group</Card.Link>
-        <Card.Link href={item.google-meet}>Google Meet</Card.Link>
+        <Card.Link href={item.link}>Join Group</Card.Link>
+        <Card.Link href={item.meet}>Google Meet</Card.Link>
     </Card.Body>
     </Card>
   )
