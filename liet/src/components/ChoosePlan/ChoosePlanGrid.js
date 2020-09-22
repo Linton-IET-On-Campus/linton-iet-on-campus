@@ -2,7 +2,7 @@ import React from 'react';
 import Spinner from 'react-bootstrap/Spinner'
 import ChoosePlanItem from './ChoosePlanItem'
 
-const OurTeamGrid = ({ items, isLoading }) => {
+const ChoosePlanGrid = ({ items, isLoading }) => {
 
     return isLoading ? ( 
         <Spinner animation="grow" variant="warning" /> 
@@ -15,6 +15,4 @@ const OurTeamGrid = ({ items, isLoading }) => {
     )
 }
 
-
-
-export default OurTeamGrid;
+export default ChoosePlanGrid;

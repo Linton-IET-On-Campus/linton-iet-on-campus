@@ -5,7 +5,6 @@ import ChoosePlanGrid from './ChoosePlanGrid';
 
 const Styles = styled.div`
 
-
 .pricing-wrap {
     padding-bottom: 20rem;
     padding-top: 7rem; }
