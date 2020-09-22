@@ -55,7 +55,8 @@ export const QnA = () => (
                             <li>Discuss and get to know the technology used in specific engineering field </li>
                             <li>Share knowledge of using CAD in different engineering field </li>
                             <li>Learning through sharing and teaching </li>
-                            <li>Increase competency and stay up to date with technology </li>
+                            <li>Increase competency of the student </li>
+                            <li>Stay up to date with technology </li>
 
                         </ul>
                     
