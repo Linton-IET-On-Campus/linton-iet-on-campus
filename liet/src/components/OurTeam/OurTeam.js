@@ -161,7 +161,7 @@ export const OurTeam = () => {
 
     <section id="team" class="pb-5">
         <div class="container">
-            <h5 class="section-title h1">OUR TEAM</h5>
+            <h5 class="section-title h1">BOARD OF COMMITTEE</h5>
              <OurTeamGrid isLoading={isLoading} items={items}/>
         </div>
     </section>

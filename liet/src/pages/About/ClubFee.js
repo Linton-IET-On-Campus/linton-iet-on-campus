@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { OurTeam } from '../../components/OurTeam/OurTeam';
+import { ChoosePlan } from '../../components/ChoosePlan/ChoosePlan';
 import { Footer } from '../../components/Footer';
 
 const Styles = styled.div`
 
 `;
 
-
-export const Committee = () => (
+export const ClubFee = () => (
     <Styles>
-        <br></br>
-        <OurTeam />
-        <Footer />
-    </Styles>
+    <br></br>
+    <ChoosePlan />
+    <Footer />
+</Styles>
 )

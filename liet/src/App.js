@@ -6,8 +6,9 @@ import { Home } from './pages/Home';
 import { LIET } from './pages/About/LIET';
 import { Committee } from './pages/About/Committee';
 import { Credits } from './pages/About/Credits';
-import { Graffiti } from './pages/About/Graffiti';
+import { ClubFee } from './pages/About/ClubFee';
 
+import { Graffiti } from './pages/About/Graffiti';
 import { StudHelpsStud } from './pages/About/StudHelpsStud';
 import { Job } from './pages/About/Job';
 import { Collaboration } from './pages/About/Collaboration';
@@ -30,8 +31,9 @@ function App() {
           <Route path="/about/linton-iet-on-campus" component={LIET} /> 
           <Route path="/about/committee" component={Committee} />
           <Route path="/about/credits" component={Credits} />
-          <Route path="/about/graffiti" component={Graffiti} />
+          <Route path="/about/club-fee" component={ClubFee} />
 
+          <Route path="/about/graffiti" component={Graffiti} />
           <Route path="/about/student-helps-student" component={StudHelpsStud} />
           <Route path="/about/intern-job-opportunity" component={Job} />
           <Route path="/about/collaboration" component={Collaboration} />

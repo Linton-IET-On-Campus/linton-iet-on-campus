@@ -43,13 +43,14 @@ export const Footer = () => (
             <ui className="list-unstyled">
             <li>Committee</li>
               <li>Credits</li>
-              <li>Graffiti</li>
+              <li>Club Fee</li>
             </ui>
           </Col>
           {/* Column3 */}
           <Col  md={4}>
             <h4>Opportunity</h4>
             <ui className="list-unstyled">
+              <li>Graffiti</li>
               <li>Student Helps Student</li>
               <li>Intern/Job</li>
               <li>Collaboration</li>

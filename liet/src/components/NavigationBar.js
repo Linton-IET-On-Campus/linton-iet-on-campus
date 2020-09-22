@@ -6,7 +6,8 @@ import logo from '../assets/logo.png';
 const Styles = styled.div`
     
     .navbar{
-        z-index: 1;
+        z-index: 10;
+
     }
 
     .navbar-brand, .navbar-nav .nav-link {
@@ -20,11 +21,12 @@ const Styles = styled.div`
     .navbar-collapse {
         flex-grow: 0.5 !important;
     }
+
 `;
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg"  fixed="top">
             <Navbar.Brand href="/">  
             <img
                 alt=""
@@ -42,14 +44,15 @@ export const NavigationBar = () => (
                             <NavDropdown.Item href="/about/linton-iet-on-campus">LIET</NavDropdown.Item>
                             <NavDropdown.Item href="/about/committee">Committee</NavDropdown.Item>
                             <NavDropdown.Item href="/about/credits">Credits</NavDropdown.Item>
-                            <NavDropdown.Item href="/about/graffiti">Graffiti</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/club-fee">Club Fee</NavDropdown.Item>
                             <NavDropdown.Divider />
+                            <NavDropdown.Item href="/about/graffiti">Graffiti</NavDropdown.Item>
                             <NavDropdown.Item href="/about/student-helps-student">Student Helps Student</NavDropdown.Item>
                             <NavDropdown.Item href="/about/intern-job-opportunity">Intern/Job</NavDropdown.Item>
                             <NavDropdown.Item href="/about/collaboration">Collaboration</NavDropdown.Item>
                         </NavDropdown>
-                    <Nav.Item><Nav.Link href="/blog">Blog</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/event">Event</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/blog">Blog</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/shop">Shop</Nav.Link></Nav.Item>
                 </Nav>
             </Navbar.Collapse>
