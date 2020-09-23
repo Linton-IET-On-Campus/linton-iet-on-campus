@@ -41,7 +41,7 @@ export const AboutSHS = () => (
                 </p>
                 <p>
                     <em> Come and join us, and be a part of our crew. 
-                    <strong> We help other taste success and you too can be part of it. </strong></em>
+                    <strong> We help other taste success and you too can be the part of it. </strong></em>
                 </p>
         </Container>
 

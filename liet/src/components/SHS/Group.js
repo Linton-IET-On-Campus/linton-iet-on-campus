@@ -17,10 +17,15 @@ const Styles = styled.div`
       
       .card { 
         border: 1px solid black;
+        border-radius: .5rem;
       }
 
       .cardbody{
           height:100px;
+      }
+
+      img{
+        border-radius: .5rem;
       }
       
 `;
