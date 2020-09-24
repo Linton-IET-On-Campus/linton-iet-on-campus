@@ -1,0 +1,112 @@
+[
+
+    {
+        "id": 1,
+        "img": "https://www.logolynx.com/images/logolynx/96/96784db947ed1c6f0fb4139bdcfc86e0.jpeg",
+        "title": "Solidwork",
+        "field": "Mechanical, Electrical",
+        "description": "Learn 3D modelling with Solidwork",
+        "leader": "Hovah",
+        "day": "Every Monday",
+        "time": "8pm onwards",
+        "link": "https://chat.whatsapp.com/H7zqAfWb9Rk1FiZ4vh4Xxv",
+        "meet": "#"
+    },
+    {
+        "id": 2,
+        "img": "https://i.pinimg.com/originals/44/4b/d0/444bd041e718b83ab63056c10461a544.png",
+        "title": "Autodesk REVIT",
+        "field": "Civil",
+        "description": "Learn Building Information Modeling (BIM) using REVIT with us ",
+        "leader": "Patrick Kong",
+        "day": "Every Saturday and Sunday",
+        "time": "8pm to 9:30pm",
+        "link": "https://chat.whatsapp.com/LRnceS77wyk19SlfuXso1i",
+        "meet": "https://meet.google.com/cbe-gspa-zvt"
+    },
+    {
+        "id": 3,
+        "img": "https://i.morioh.com/67feeaf72f.png",
+        "title": "Web Development",
+        "field": "Software",
+        "description": "Learn full stack web development with MERN Stack",
+        "leader": "Hovah",
+        "day": "Every Tuesday",
+        "time": "8pm onwards",
+        "link": "https://chat.whatsapp.com/FSVcNfqVeXJ0aggY563hpD",
+        "meet": "#"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ytimg.com/vi/LahDQYjtUgE/maxresdefault.jpg",
+        "title": "Adobe Animate",
+        "field": "Software",
+        "description": "Animation is bonue skillset for game development, join us to learn",
+        "leader": "Kai Liang",
+        "day": "Every Sunday",
+        "time": "8pm to 9pm",
+        "link": "https://chat.whatsapp.com/H6dqiFe023LCofKJW1fdf4",
+        "meet": "#"
+    },
+    {
+        "id": 5,
+        "img": "https://i.morioh.com/701ee25207.png",
+        "title": "Machine Learning",
+        "field": "Software",
+        "description": "Come and learn machine learning using Tensorflow with us",
+        "leader": "Jordan Wong",
+        "day": "To be announced",
+        "time": "To be announced",
+        "link": "https://chat.whatsapp.com/JBL8kDOpatJ0KZuoxu7b7V",
+        "meet": "#"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ytimg.com/vi/uSDVA5CQBu8/maxresdefault.jpg",
+        "title": "Game Development",
+        "field": "Software",
+        "description": "Want to learn how to create a 2D game with Unity or Godot? Join us!",
+        "leader": "Lee Kah Hin",
+        "day": "To be announced",
+        "time": "To be announced",
+        "link": "https://chat.whatsapp.com/HAbEQtaqcLx55sxfqyYTHr",
+        "meet": "#"
+    },
+    {
+        "id": 7,
+        "img": "https://bluewhaleapps.com/wp-content/uploads/2019/08/React-vs-Flutter.jpg",
+        "title": "Mobile Development",
+        "field": "Software",
+        "description": "Learn how to make a native or hybrid mobile applicaiton, join us!",
+        "leader": "Hovah",
+        "day": "To be announced",
+        "time": "To be announced",
+        "link": "#",
+        "meet": "#"
+    },
+    {
+        "id": 8,
+        "img": "https://miro.medium.com/max/640/1*UA977AHDNe7MsFjUYn2w7g.png",
+        "title": "Data Science",
+        "field": "Software",
+        "description": "Join us to learn Data Science with Python!",
+        "leader": "Hovah",
+        "day": "To be announced",
+        "time": "To be announced",
+        "link": "#",
+        "meet": "#"
+    },
+    {
+        "id": 9,
+        "img": "https://i.ytimg.com/vi/elUJCEC06r8/maxresdefault.jpg",
+        "title": "3D Modelling",
+        "field": "Software",
+        "description": "Let's learn 3D modelling with Blender!",
+        "leader": "Hovah",
+        "day": "To be announced",
+        "time": "To be announced",
+        "link": "#",
+        "meet": "#"
+    }
+
+]
