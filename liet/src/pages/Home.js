@@ -1,7 +1,56 @@
-import React from 'react'
-
-export const Home = () => (
-    <div>
-    hello world
-    </div>
-)
+document.write( '<!DOCTYPE html>\n' );
+document.write( '<html>\n' );
+document.write( '<head>\n' );
+document.write( '<style>\n' );
+document.write( '* {\n' );
+document.write( '  box-sizing: border-box;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( 'body {\n' );
+document.write( '  font-family: Arial;\n' );
+document.write( '  padding: 10px;\n' );
+document.write( '  background: #f1f1f1;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '/* Header/Blog Title */\n' );
+document.write( '.header {\n' );
+document.write( '  padding: 10px;\n' );
+document.write( '  text-align: center;\n' );
+document.write( '  background: white;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '.header h1 {\n' );
+document.write( '  font-size: 25px;\n' );
+document.write( '  padding: 5px;\n' );
+document.write( '  background-color: orange;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '/* Fake image */\n' );
+document.write( '.TextBoard {\n' );
+document.write( '  background-color: #aaa;\n' );
+document.write( '  width: 100%;\n' );
+document.write( '  padding: 20px;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '/* Add a card effect for articles */\n' );
+document.write( '.Row {\n' );
+document.write( '  background-color: white;\n' );
+document.write( '  padding: 20px;\n' );
+document.write( '  margin-top: 20px;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '</style>\n' );
+document.write( '  <title>Homepage</title>\n' );
+document.write( '</head>\n' );
+document.write( '<body>\n' );
+document.write( '\n' );
+document.write( '<div class=\"header\">\n' );
+document.write( '  <h1>Homepage</h1>\n' );
+document.write( '</div>\n' );
+document.write( '\n' );
+document.write( '    <div class=\"Row\">\n' );
+document.write( '      <div class=\"TextBoard\"></div>\n' );
+document.write( '    </div>\n' );
+document.write( '\n' );
+document.write( '</body>\n' );
+document.write( '</html>\n' );
