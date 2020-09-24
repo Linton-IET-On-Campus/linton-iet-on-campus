@@ -1,4 +1,5 @@
 [
+
     {
         "id": 1,
         "img": "https://www.logolynx.com/images/logolynx/96/96784db947ed1c6f0fb4139bdcfc86e0.jpeg",
@@ -52,7 +53,7 @@
         "img": "https://blog.bismart.com/hubfs/20190903-MachineLearning.jpg",
         "title": "Machine Learning",
         "field": "Software",
-        "description": "Come and learn machine learning with us",
+        "description": "Come and learn machine learning using Tensoorflow with us",
         "leader": "Jordan Wong",
         "day": "To be announced",
         "time": "To be announced",
@@ -71,5 +72,5 @@
         "link": "https://chat.whatsapp.com/HAbEQtaqcLx55sxfqyYTHr",
         "meet": "#"
     }
- 
+
 ]
