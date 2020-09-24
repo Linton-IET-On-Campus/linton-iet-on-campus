@@ -53,7 +53,7 @@ export const Group = () => {
     <Styles>
 
         <Container>
-            <h2 class="section-title h1">Studies Group</h2>
+            <h2 class="section-title h1">Study Group</h2>
              <GroupGrid isLoading={isLoading} items={items}/>
         </Container>
 
