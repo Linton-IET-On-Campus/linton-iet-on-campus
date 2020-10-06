@@ -7,6 +7,7 @@ import { QnA } from '../../components/SHS/QnA';
 import { Group } from '../../components/SHS/Group';
 
 import { Footer } from '../../components/Footer';
+import { NavigationBar } from '../../components/NavigationBar';
 
 const Styles = styled.div`
 
@@ -14,6 +15,7 @@ const Styles = styled.div`
 
 export const StudHelpsStud = () => (
     <Styles>
+           <NavigationBar />
 
    <Jumbotron />
    <AboutSHS />

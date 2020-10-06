@@ -146,7 +146,7 @@ export const OurTeam = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const  result = await axios(
-          `https://linton-iet-on-campus.github.io/linton-iet-on-campus/backend/data/our-team/index.json`
+          `http://localhost:5000/committees/`
         )
         console.log(result.data)
 

@@ -46,7 +46,7 @@ export const NavigationBar = () => (
                             <NavDropdown.Item href="/about/credits">Credits</NavDropdown.Item>
                             <NavDropdown.Item href="/about/club-fee">Club Fee</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/about/graffiti">Graffiti</NavDropdown.Item>
+                            <NavDropdown.Item href="/about/memory-wall">Memory Wall</NavDropdown.Item>
                             <NavDropdown.Item href="/about/student-helps-student">Student Helps Student</NavDropdown.Item>
                             <NavDropdown.Item href="/about/intern-job-opportunity">Intern/Job</NavDropdown.Item>
                             <NavDropdown.Item href="/about/collaboration">Collaboration</NavDropdown.Item>
@@ -54,6 +54,12 @@ export const NavigationBar = () => (
                     <Nav.Item><Nav.Link href="/event">Event</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/blog">Blog</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/shop">Shop</Nav.Link></Nav.Item>
+
+                    <Nav.Item>
+                        <Nav.Link href="/login">
+                            🔒 Login
+                        </Nav.Link>
+                    </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
