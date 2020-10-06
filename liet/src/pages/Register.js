@@ -30,18 +30,18 @@ const Styles = styled.div`
 
 export const Register= () => {
 
-    const [registerEmail, setEmail] = useState("");
+    const [registerUsername, setUsername] = useState("");
     const [registerPassword, setPassword] = useState("");
   
     function validateForm() {
-      return registerEmail.length > 0 && registerPassword.length > 0;
+      return registerUsername.length > 0 && registerPassword.length > 0;
     }
   
     const register = () => {
         Axios({
             method: "POST",
             data: {
-                email: registerEmail,
+                username: registerUsername,
                 password: registerPassword,
             },
             withCredentials: true,
@@ -64,14 +64,13 @@ export const Register= () => {
 
         <form>
 
-          <FormGroup controlId="email">
+          <FormGroup controlId="username">
 
-            <label>Email</label>
+            <label>Username</label>
             <FormControl
               autoFocus
-              type="email"
-              value={registerEmail}
-              onChange={e => setEmail(e.target.value)}
+              value={registerUsername}
+              onChange={e => setUsername(e.target.value)}
             />
           </FormGroup>
           <FormGroup controlId="password" >

@@ -25,15 +25,6 @@ app.use(session({
 app.use(express.json());
 app.use(cookieParser("secretcode"))
 
-app.post("/login", (req, res) => {
-  console.log(req.body);
-})
-
-
-app.post("/user", (req, res) => {
-  console.log(req.body);
-})
-
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true}
 );

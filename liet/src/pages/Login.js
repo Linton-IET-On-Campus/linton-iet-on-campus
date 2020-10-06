@@ -21,23 +21,19 @@ const Styles = styled.div`
       padding: 100px;
   }
 
-
-
-
-
 `;
 
 
 export const Login= () => {
 
-    const [loginEmail, setEmail] = useState("");
+    const [loginUsername, setUsername] = useState("");
     const [loginPassword, setPassword] = useState("");
   
     const login = () => {
         Axios({
             method: "POST",
             data: {
-                email: loginEmail,
+                username: loginUsername,
                 password: loginPassword,
             },
             withCredentials: true,
@@ -60,19 +56,16 @@ export const Login= () => {
 
 
         <form>
-          <FormGroup controlId="email" >
-            <label>Email</label>
+          <FormGroup controlId="username" >
+            <label>Username</label>
             <FormControl
               autoFocus
-              type="email"
-              value={loginEmail}
-              onChange={e => setEmail(e.target.value)}
+              onChange={e => setUsername(e.target.value)}
             />
           </FormGroup>
           <FormGroup controlId="password" >
             <label>Password</label>
             <FormControl
-              value={loginPassword}
               onChange={e => setPassword(e.target.value)}
               type="password"
             />
