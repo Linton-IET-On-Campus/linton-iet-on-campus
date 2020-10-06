@@ -1,11 +1,38 @@
   
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
+const passport = require('passport');
+const passportLocal = require('passport-local').Strategy;
+const cookieParser = require('cookie-parser');
+const bcrypt = require('bcryptjs');
+const session = require('express-session');
 
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true,
+}));
+app.use(session({
+  secret: "secretcode",
+  resave: true,
+  saveUninitialized: true
+}))
+app.use(express.json());
+app.use(cookieParser("secretcode"))
+
+app.post("/login", (req, res) => {
+  console.log(req.body);
+})
+
+
+app.post("/user", (req, res) => {
+  console.log(req.body);
+})
 
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true}

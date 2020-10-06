@@ -31,23 +31,23 @@ Admin.find()
 });
 
 router.route('/register').post((req, res) => {
-    Admin.findOne({email: req.body.email}, async (err,doc) => {
-        if(err) throw err;
+Admin.findOne({email: req.body.email}, async (err,doc) => {
+    if(err) throw err;
         if(doc) res.send("Admin already exists");
             if(!doc) {
-            const hashedPassword = await bcrypt.hash(req.body.password, 10);
-            const newAdmin = new Admin({
-                email: req.body.email,
-                password: hashedPassword,
-            });
-            await newAdmin.save();
-            res.send("Admin created");
-        }
+                const hashedPassword = await bcrypt.hash(req.body.password, 10);
+                const newAdmin = new Admin({
+                    email: req.body.email,
+                    password: hashedPassword,
+                });
+                await newAdmin.save();
+                res.send("Admin created");
+            }
     });
 });
 
 router.route("/login").post((req, res, next) => {
-    passport.authenticate("local", function(err, admin, info) {
+    passport.authenticate("local", (err, admin, info) => {
         if (err) throw err;
         if (!admin) res.send("No Admin Exists");
         else {
