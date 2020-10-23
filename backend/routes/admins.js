@@ -1,22 +1,9 @@
 const router = require('express').Router();
-const mongoose = require('mongoose');
 const Admin = require('../models/admin.model');
-const cors = require("cors");
+
 const passport = require("passport");
 const cookieParser = require("cookie-parser");
 const bcrypt = require("bcryptjs");
-const session = require("express-session");
-
-router.use(cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-}));
-
-router.use(session({
-    secret: "secretcode",
-    resave: true,
-    saveUninitialized: true
-}))
 
 router.use(cookieParser("secretcode"))
 router.use(passport.initialize());
@@ -24,8 +11,9 @@ router.use(passport.session());
 require("./passportConfig")(passport);
 
 
-router.route("/login").post((req, res, next) => {
-    passport.authenticate("local", (err, user, info) => {
+router.route('/login').post((req, res, next) => {
+    passport.authenticate('local', 
+    (err, user, info) => {
         if (err) throw err;
         if (!user) res.send("No Admin Exists");
         else {

@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './pages/Home';
 
 import { LIET } from './pages/About/LIET';
-import CreateCommittee from "./components/Dashboard/create-committee.component";
 
 import { Committee } from './pages/About/Committee';
 import { Credits } from './pages/About/Credits';
@@ -18,14 +17,18 @@ import { Collaboration } from './pages/About/Collaboration';
 import { Event } from './pages/Event';
 import { Blog } from './pages/Blog';
 import { Shop } from './pages/Shop';
+
+
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
+import { Dashboard } from './pages/Dashboard/Dashboard';
 
 import { NoMatch } from './pages/NoMatch';
 
 import { Layout } from './components/Layout';
 
 function App() {
+
   return (
   <React.Fragment>
       <Router>
@@ -33,7 +36,6 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about/linton-iet-on-campus" component={LIET} /> 
           <Route path="/about/committee" component={Committee} />
-          <Route path="/dashboard/committee/create" component={CreateCommittee} />
           <Route path="/about/credits" component={Credits} />
           <Route path="/about/club-fee" component={ClubFee} />
 
@@ -46,6 +48,8 @@ function App() {
           <Route path="/event" component={Event} />
           <Route path="/shop" component={Shop} />
           <Route path="/login" component={Login} />
+          <Route path="/dashboard" component={Dashboard} />
+
           <Route path="/register" component={Register} />
 
           <Route component={NoMatch} />

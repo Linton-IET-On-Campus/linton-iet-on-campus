@@ -11,10 +11,12 @@ const Styles = styled.div`
 
 export const ClubFee = () => (
     <Styles>
-                   <NavigationBar />
+
+    <NavigationBar />
 
     <br></br>
     <ChoosePlan />
     <Footer />
+    
 </Styles>
 )

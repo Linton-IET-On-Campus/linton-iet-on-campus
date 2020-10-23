@@ -2,10 +2,8 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const passport = require('passport');
-const passportLocal = require('passport-local').Strategy;
+
 const cookieParser = require('cookie-parser');
-const bcrypt = require('bcryptjs');
 const session = require('express-session');
 
 require('dotenv').config();
@@ -38,6 +36,7 @@ app.use('/committees', committeesRouter);
 
 const adminRouter = require('./routes/admins')
 app.use('/admins', adminRouter);
+
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

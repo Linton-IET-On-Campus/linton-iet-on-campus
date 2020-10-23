@@ -15,14 +15,15 @@ const Styles = styled.div`
 
 export const StudHelpsStud = () => (
     <Styles>
-           <NavigationBar />
 
-   <Jumbotron />
-   <AboutSHS />
-   <hr />
-   <QnA />
-   <hr />
-   <Group />
+    <NavigationBar />
+
+    <Jumbotron />
+    <AboutSHS />
+    <hr />
+    <QnA />
+    <hr />
+    <Group />
     <Footer />
 
     </Styles>

@@ -12,10 +12,12 @@ const Styles = styled.div`
 
 export const Committee = () => (
     <Styles>
-                   <NavigationBar />
+
+        <NavigationBar />
 
         <br></br>
         <OurTeam />
         <Footer />
+        
     </Styles>
 )

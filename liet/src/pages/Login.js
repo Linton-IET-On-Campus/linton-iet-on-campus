@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import logo from '../assets/logo.png';
-import Axios from "axios";
+import Axios from 'axios';
 
 import styled from 'styled-components';
+
 
 const Styles = styled.div`
 @media all and (min-width: 480px) {
@@ -25,20 +26,26 @@ const Styles = styled.div`
 
 
 export const Login= () => {
-
+  
     const [loginUsername, setUsername] = useState("");
     const [loginPassword, setPassword] = useState("");
   
     const login = () => {
-        Axios({
-            method: "POST",
-            data: {
-                username: loginUsername,
-                password: loginPassword,
-            },
-            withCredentials: true,
-            url: "http://localhost:5000/admins/login",
-        }).then((res) => console.log(res));
+      Axios({
+        method: "POST",
+        data: {
+            username: loginUsername,
+            password: loginPassword,
+        },
+        withCredentials: true,
+        url: "http://localhost:5000/admins/login",
+    }).then((res) => {
+      if (res.data === "Successfully Authenticated") {
+       window.location.href = "http://localhost:3000/dashboard";
+     }
+    }, () => {
+      console.log("Failure");
+    });    
     }
 
     return(
