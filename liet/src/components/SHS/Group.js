@@ -39,7 +39,7 @@ export const Group = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const  result = await axios(
-          `https://linton-iet-on-campus.github.io/linton-iet-on-campus/backend/data/join-group/index.json`
+        `http://localhost:5000/student-helps-student/`
         )
         console.log(result.data)
 

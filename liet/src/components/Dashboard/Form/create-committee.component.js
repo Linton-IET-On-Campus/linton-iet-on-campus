@@ -79,7 +79,7 @@ export default class CreateCommitteee extends Component {
     axios.post('http://localhost:5000/committees/add', committee)
       .then(res => console.log(res.data));
 
-    window.location = '/committees/add';
+    window.location = '/dashboard';
   }
 
   render() {
@@ -145,7 +145,7 @@ export default class CreateCommitteee extends Component {
               />
         </div>
         <div className="form-group">
-          <input type="submit" value="Add Committee" className="btn btn-primary" />
+          <input type="submit" value="Submit" className="btn btn-primary" />
         </div>
       </form>
     </Container>

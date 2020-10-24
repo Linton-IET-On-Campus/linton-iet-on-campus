@@ -20,8 +20,8 @@ const GroupItem = ({ item }) => {
             <ListGroupItem><i class="fas fa-clock"></i> {item.time}</ListGroupItem>
         </ListGroup>
         <Card.Footer>
-            <Card.Link href={item.link}>Join Group</Card.Link>
-            <Card.Link href={item.meet}>Google Meet</Card.Link>
+            <Card.Link href={item.link} target="_blank">Join Group</Card.Link>
+            <Card.Link href={item.meet} target="_blank">Google Meet</Card.Link>
         </Card.Footer>
     </Card>
   )

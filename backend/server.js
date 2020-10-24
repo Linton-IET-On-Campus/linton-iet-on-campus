@@ -37,6 +37,8 @@ app.use('/committees', committeesRouter);
 const adminRouter = require('./routes/admins')
 app.use('/admins', adminRouter);
 
+const shsRouter = require('./routes/shs')
+app.use('/student-helps-student', shsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
