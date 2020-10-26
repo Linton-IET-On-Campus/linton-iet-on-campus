@@ -74,7 +74,7 @@ export const BlogList = () => {
     useEffect(() => {
       const fetchItems = async () => {
         const  result = await axios(
-            `http://localhost:5000/blog/`
+            `https://raw.githubusercontent.com/Linton-IET-On-Campus/linton-iet-on-campus/master/backend/data/blog/index.json`
           )
           console.log(result.data)
   
