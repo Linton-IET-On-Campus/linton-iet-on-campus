@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch, Link  } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 
-import  CreateCommittee from './Form/create-committee.component';
-import  CreateSHS from './Form/create-student-helps-student.component';
+import CreateCommittee from './Form/create-committee.component';
+import CreateSHS from './Form/create-student-helps-student.component';
+import CreateIntern from './Form/create-intern-job-opportunity';
+import CreateMemory from './Form/create-memory';
 
 const Styles = styled.div`
 body {
@@ -89,6 +91,9 @@ main {
 }
 .menu ul li.icon-calendar {
   background-image: url("http://www.entypo.com/images//calendar.svg");
+}
+.menu ul li.icon-documents {
+  background-image: url("http://www.entypo.com/images//documents.svg");
 }
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -219,12 +224,12 @@ export const Main = () => (
   </header>
 	<ul>
     <li class="icon-add-users"><a href="/dashboard/add-committee"><span>Committees</span></a></li>
-    <li href="/about/linton-iet-on-campus" class="icon-graduation-cap"><a href="/dashboard/add-student-helps-student"><span>Student Helps Student</span></a></li>
-    <li href="/about/linton-iet-on-campus" class="icon-customers"><span>Intern/Job</span></li>
-    <li href="/about/linton-iet-on-campus" class="icon-calendar"><span>Event</span></li>
-    <li href="/about/linton-iet-on-campus" class="icon-publish"><span>Blog</span></li>
-    <li href="/about/linton-iet-on-campus"class="icon-shop"><span>Shop</span></li>
-    <li href="/about/linton-iet-on-campus" class="icon-log-out"><span>Logout</span></li>
+    <li class="icon-graduation-cap"><a href="/dashboard/add-student-helps-student"><span>Student Helps Student</span></a></li>
+    <li class="icon-documents"><a href="/dashboard/add-memory"><span>Memory Wall</span></a></li>
+    <li class="icon-customers"><a href="/dashboard/add-intern-job-opportunity"><span>Intern/Job</span></a></li>
+    <li class="icon-publish"><a href="/dashboard/add-blog"><span>Blog</span></a></li>
+    <li class="icon-shop"><a href="/dashboard/add-shop"><span>Shop</span></a></li>
+    <li class="icon-log-out"><a href="/login"><span>Logout</span></a></li>
   </ul>
 </nav>
 
@@ -234,6 +239,10 @@ export const Main = () => (
           <Route exact path="/dashboard" component={CreateCommittee} />
           <Route  path="/dashboard/add-committee" component={CreateCommittee} />
           <Route  path="/dashboard/add-student-helps-student" component={CreateSHS} />
+          <Route  path="/dashboard/add-memory" component={CreateMemory} />
+          <Route  path="/dashboard/add-intern-job-opportunity" component={CreateIntern} />
+          <Route  path="/dashboard/add-blog" component={CreateIntern} />
+          <Route  path="/dashboard/add-shop" component={CreateIntern} />
 
         </Switch>
       </Router> 

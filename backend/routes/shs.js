@@ -36,8 +36,8 @@ router.route('/add').post((req, res) => {
 });
 
 router.route('/:id').get((req, res) => {
-  Committee.findById(req.params.id)
-    .then(committee => res.json(committee))
+    SHS.findById(req.params.id)
+    .then(shs => res.json(shs))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 

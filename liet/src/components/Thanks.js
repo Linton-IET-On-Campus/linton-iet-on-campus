@@ -49,8 +49,20 @@ export const Thanks = (props)  => (
     <div class="name">Hovah Yii</div>
   </div>
   <div class="category">
-    <div class="job">Designer</div>
-    <div class="name">Kai Liang</div>
+    <div class="job">Lead Front End Developer</div>
+    <div class="name">Yeo Kai Liang</div>
+  </div>
+  <div class="category">
+    <div class="job">Front End Developer</div>
+    <div class="name">Muhammad Harris Mohd Idris</div>
+    <div class="name">Jordan Wong Pang Wei</div>
+    <div class="name">Lee Kah Hin</div>
+    <div class="name">Vincent Tang Wei Hong</div>
+  </div>
+  <div class="category">
+    <div class="job">Contributors</div>
+    <div class="name">Nigel Ryan</div>
+    <div class="name">Lim Zi Heng</div>
   </div>
   <div class="category">
     <div class="job">Special thanks</div>

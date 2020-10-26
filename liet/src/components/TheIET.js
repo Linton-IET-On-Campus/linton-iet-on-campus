@@ -50,7 +50,7 @@ export const TheIET = (props)  => (
             <p>
                 Our aims and aspirations and how we intend to achieve them. 
                 <br></br>
-                <Button variant="info">Find out more</Button>{' '}
+                <a href="https://www.theiet.org/" target="_blank"><Button variant="info">Find out more</Button></a>
 
             </p>
         </Container>    

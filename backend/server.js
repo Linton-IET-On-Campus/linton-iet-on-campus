@@ -40,6 +40,12 @@ app.use('/admins', adminRouter);
 const shsRouter = require('./routes/shs')
 app.use('/student-helps-student', shsRouter);
 
+const internRouter = require('./routes/intern')
+app.use('/intern-job-opportunity', internRouter);
+
+const memoryRouter = require('./routes/memory')
+app.use('/memory-wall', memoryRouter);
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });

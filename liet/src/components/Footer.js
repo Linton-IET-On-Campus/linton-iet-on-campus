@@ -41,19 +41,19 @@ export const Footer = () => (
           <Col  md={4}>
             <h4>About</h4>
             <ui className="list-unstyled">
-            <li>Committee</li>
-              <li>Credits</li>
-              <li>Club Fee</li>
+            <a href="/about/committee"><li>Committee</li></a>
+            <a href="/about/credits" ><li>Credits</li></a>
+            <a href="/about/club-fee"><li>Club Fee</li></a>
             </ui>
           </Col>
           {/* Column3 */}
           <Col  md={4}>
-            <h4>Opportunity</h4>
+            <h4>Activities</h4>
             <ui className="list-unstyled">
-              <li>Graffiti</li>
-              <li>Student Helps Student</li>
-              <li>Intern/Job</li>
-              <li>Collaboration</li>
+            <a href="/about/memory-wall" ><li>Memory Wall</li></a>
+            <a href="/about/student-helps-student" ><li>Student Helps Student</li></a>
+            <a href="/about/intern-job-opportunity" ><li>Intern/Job</li></a>
+            <a href="/about/collaboration" ><li>Collaboration</li></a>
             </ui>
           </Col>
         </Row>
@@ -63,7 +63,7 @@ export const Footer = () => (
             &copy;{new Date().getFullYear()} Linton IET on Campus | All rights reserved 
           </p>
           <p className="col-sm pull-right">
-            Build With <a href="https://reactjs.org/" target="_blank"><i className="fab fa-react fa-spin fa-2x	"></i></a> <a href="https://nodejs.org/en/" target="_blank"><i class="fab fa-node fa-2x	"></i></a>
+            Powered by <a href="https://reactjs.org/" target="_blank"><i className="fab fa-react fa-spin fa-2x	"></i></a> <a href="https://nodejs.org/en/" target="_blank"><i class="fab fa-node fa-2x	"></i></a>
           </p>
         </Row>
       </Container>
