@@ -48,7 +48,7 @@ function App() {
           <Route path="/about/collaboration" component={Collaboration} />
 
           <Route exact path="/blog" component={Blog} />
-          <Route path="/post/:slug" component={SingleBlog} />
+          <Route path="/blog/:slug" component={SingleBlog} />
 
           <Route path="/event" component={Event} />
           <Route path="/shop" component={Shop} />

@@ -11,7 +11,8 @@ const Styles = styled.div`
 
 export const SingleBlog = () => (
     <Styles>
-           <NavigationBar />
+        
+        <NavigationBar />
 
         <br></br>
 

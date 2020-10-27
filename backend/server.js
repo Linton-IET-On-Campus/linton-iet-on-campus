@@ -56,7 +56,9 @@ app.use('/contacts', contactRouter);
 const productRouter = require('./routes/product')
 app.use('/products', productRouter);
 
-
+if (process.env.NODE_ENV == 'production') {
+  
+}
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
