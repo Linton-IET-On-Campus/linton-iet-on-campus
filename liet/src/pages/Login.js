@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import logo from '../assets/logo.png';
 import Axios from 'axios';
+import auth from "../auth";
 
 import styled from 'styled-components';
 
@@ -42,6 +43,7 @@ export const Login= () => {
     }).then((res) => {
       if (res.data === "Successfully Authenticated") {
        window.location.href = "http://localhost:3000/dashboard";
+
      }
     }, () => {
       console.log("Failure");

@@ -17,7 +17,8 @@ export const Home = () => (
         <br></br>
         <TheIET />
         <br></br>
+   
          <Footer />
-         
+ 
     </Styles>
 )

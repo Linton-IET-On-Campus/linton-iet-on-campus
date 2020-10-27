@@ -31,6 +31,7 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
 
+
 const committeesRouter = require('./routes/committees');
 app.use('/committees', committeesRouter);
 

@@ -14,7 +14,7 @@ body{
 
 .header{
 	background-image: linear-gradient(to top right, rgb(241, 148, 138, 0.8), rgb(248, 196, 113, 0.8)),url('https://www.uowmkdu.edu.my/wp-content/uploads/2020/06/parcel-paper-cartons-with-shopping-cart-logo-trolley-laptop-keyboard_9635-3215.jpg');
-	height: 450px;
+	height: 600px;
 	padding: 20px;
 	background-size: 100% 700px;
 }
@@ -37,13 +37,18 @@ body{
 
 
 .header p{
-    text-shadow: 5px 5px #fff;
 	font-size: 30px;
 	color: black;
-	margin-left: 20px;
-	text-align: center;
+	margin-left: 80px;
+	text-align: left;
 }
 
+.header ol{
+	font-size: 20px;
+    color: black;
+    margin-left: 50px;
+	text-align: left;
+}
 
 .header h1{
 	font-size: 70px;
@@ -74,6 +79,11 @@ body{
     .header h2{
         font-size: 30px;
        
+    }
+
+    .header ol{
+        font-size: 14px;
+        margin-left: 20px;
     }
 }
 
@@ -151,8 +161,17 @@ export const ShopList = () => {
             <body>
                 <div class="header">
                     <h1><u>LIET Shop</u></h1>
-                    <p>Second Hand · Accessories · Furniture </p>
-                    <h2>Free Delivery Within Linton University College Area</h2>
+                    <h2>Second Hand · Accessories · Furniture </h2>
+                    <br/>
+                    <p><u>Term and Condition</u></p>
+                    <ol>
+                        <li>We only provide online platform for you to post your product.</li>
+                        <li>We will not meddle and are not responsible for your deals with buyers.</li>
+                        <li>We do not provide delivery. You have to send the item to the buyer yourself.</li>
+                        <li>We will charge you RM 3 if you want us to help you send the item within Linton University College area. </li>
+                        <li><strong>Take note, we only help seller delivering item within Linton University College area only</strong>.</li>
+
+                    </ol>
 
                 </div>
 

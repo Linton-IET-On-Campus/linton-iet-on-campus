@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { ProtectedRoute } from "./protected.route";
 
 import { Home } from './pages/Home';
 
@@ -47,12 +48,12 @@ function App() {
           <Route path="/about/collaboration" component={Collaboration} />
 
           <Route exact path="/blog" component={Blog} />
-          <Route path="/blog/:slug" component={SingleBlog} />
+          <Route path="/post/:slug" component={SingleBlog} />
 
           <Route path="/event" component={Event} />
           <Route path="/shop" component={Shop} />
           <Route path="/login" component={Login} />
-          <Route path="/dashboard" component={Dashboard} />
+          <Route  path="/dashboard" component={Dashboard} />
 
           <Route path="/register" component={Register} />
 

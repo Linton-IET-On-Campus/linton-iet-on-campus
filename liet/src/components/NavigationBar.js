@@ -22,6 +22,35 @@ const Styles = styled.div`
         flex-grow: 0.5 !important;
     }
 
+    .kfds-c-show-web-to-ipad-only {
+        visibility: inherit;
+    }
+    .kfds-srf-height-s {
+        height: 46px;
+    }
+   
+    .kfds-btn-primary {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        background-color: #ff5f5f;
+        height: 30px;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 10px;
+        border: none;
+        transition: color .15s ease-in-out 0s,background-color .15s ease-in-out 0s;
+    }
+    
+    .support{
+        text-align: right;
+        float: right
+    }
+
+    
+    
+
 `;
 
 export const NavigationBar = () => (
@@ -59,6 +88,19 @@ export const NavigationBar = () => (
                         <Nav.Link href="/login">
                             🔒 Login
                         </Nav.Link>
+                    </Nav.Item>
+
+                    <Nav.Item className="support">
+
+                        <Nav.Link href="https://ko-fi.com/hovahyii" target="_blank">
+                            
+                        <button type="submit" id="headerSupportBtn" class=" kfds-btn-primary kfds-font-bold kfds-srf-rounded kfds-lyt-width-47 kfds-srf-height-s custom-color-solid-bg  kfds-c-show-web-to-ipad-only kfds-left-mrgn-16 button-experiment" onclick="checkoutApp.initializeDonationFlow()">
+                            <img src="https://storage.ko-fi.com/cdn/cuplogo-sm.png" class="kfds-right-mrgn-8" height="16"/>
+                            <span id="">&nbsp;<strong>BUY ME A COFFEE</strong></span>
+                        </button>
+
+                        </Nav.Link>
+
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
