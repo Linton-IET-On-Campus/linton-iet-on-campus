@@ -52,6 +52,10 @@ app.use('/blog', blogRouter);
 const contactRouter = require('./routes/contact')
 app.use('/contacts', contactRouter);
 
+const productRouter = require('./routes/product')
+app.use('/products', productRouter);
+
+
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

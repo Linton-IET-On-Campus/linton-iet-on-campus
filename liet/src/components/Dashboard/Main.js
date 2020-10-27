@@ -6,9 +6,20 @@ import logo from '../../assets/logo.png';
 import CreateCommittee from './Form/create-committee.component';
 import ContactList from "./contact-list";
 
-import CreateSHS from './Form/create-student-helps-student.component';
+import CreateSHS from './Student-Helps-Student/create-student-helps-student';
+import SHSList from './Student-Helps-Student/student-helps-student-list';
+import EditSHS from './Student-Helps-Student/edit-student-helps-student';
+
+
+
 import CreateIntern from './Form/create-intern-job-opportunity';
 import CreateMemory from './Form/create-memory';
+
+
+import ProductList from './Product/product-list';
+import CreateProduct from './Product/create-product';
+import EditProduct from './Product/edit-product';
+
 // import CreateBlog from './Form/create-blog';
 
 
@@ -231,13 +242,13 @@ export const Main = () => (
   </header>
 	<ul>
     <li class="icon-add-users"><a href="/dashboard/add-committee"><span>Committees</span></a></li>
-    <li class="icon-graduation-cap"><a href="/dashboard/add-student-helps-student"><span>Student Helps Student</span></a></li>
+    <li class="icon-graduation-cap"><a href="/dashboard/student-helps-student-list"><span>Student Helps Student</span></a></li>
     <li class="icon-documents"><a href="/dashboard/add-memory"><span>Memory Wall</span></a></li>
     <li class="icon-customers"><a href="/dashboard/add-intern-job-opportunity"><span>Intern/Job</span></a></li>
     {/* <li class="icon-publish"><a href="/dashboard/add-blog"><span>Blog</span></a></li> */}
     <li class="icon-old-phone"><a href="/dashboard/collaboration"><span>Collaboration</span></a></li>
 
-    <li class="icon-shop"><a href="/dashboard/add-shop"><span>Shop</span></a></li>
+    <li class="icon-shop"><a href="/dashboard/shop/product-list"><span>Shop</span></a></li>
     <li class="icon-log-out"><a href="/login"><span>Logout</span></a></li>
   </ul>
 </nav>
@@ -247,13 +258,20 @@ export const Main = () => (
         <Switch>
           <Route exact path="/dashboard" component={CreateCommittee} />
           <Route  path="/dashboard/add-committee" component={CreateCommittee} />
+
+          <Route  path="/dashboard/student-helps-student-list" component={SHSList} />
           <Route  path="/dashboard/add-student-helps-student" component={CreateSHS} />
+          <Route  path="/dashboard/student-helps-student/edit/:id" component={EditSHS} />
+
+
           <Route  path="/dashboard/add-memory" component={CreateMemory} />
           <Route  path="/dashboard/add-intern-job-opportunity" component={CreateIntern} />
           <Route  path="/dashboard/collaboration" component={ContactList} />
           {/* <Route  path="/dashboard/add-blog" component={CreateBlog} /> */}
-          <Route  path="/dashboard/add-shop" component={CreateIntern} />
 
+          <Route  path="/dashboard/shop/product-list" component={ProductList} />
+          <Route  path="/dashboard/shop/create-product" component={CreateProduct} />
+          <Route  path="/dashboard/shop/edit/:id" component={EditProduct} />
         </Switch>
       </Router> 
 

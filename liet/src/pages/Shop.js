@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Footer } from '../components/Footer';
-import { ShopList } from '../components/Shop/ShopList';
+import { ShopList } from '../components/Shop/ProductList';
 import { NavigationBar } from '../components/NavigationBar';
 
 const Styles = styled.div`

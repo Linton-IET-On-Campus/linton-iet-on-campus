@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-
+import axios from "axios";
+import ProductListGrid from './ProductListGrid';
+import 'font-awesome/css/font-awesome.min.css';
 const Styles = styled.div`
 
 body{
@@ -107,50 +109,60 @@ body{
 @media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
 }
 
+.menu ul li.icon-mobile {
+    background-image: url("http://www.entypo.com/images//mobile.svg");
+  }
+
+  .pic-1{
+    width: 300px !important;
+    height:  350px !important;
+  }
+  .pic-2{
+    width: 300px !important;
+    height:  350px !important;
+  }
+ 
+
 `;
 
 
     
-export const ShopList = () => (
+export const ShopList = () => {
 
+    const [items, setItems] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
+  
+    useEffect(() => {
+      const fetchItems = async () => {
+        const  result = await axios(
+            `http://localhost:5000/products/`
+          )
+          console.log(result.data)
+  
+          setItems(result.data)
+          setIsLoading(false)
+        }
+        fetchItems()
+      },[])
 
-    <Styles>
+      return(
+            <Styles>
 
-    <body>
-        <div class="header">
-            <h1><u>LIET Shop</u></h1>
-            <p>Second Hand · Accessories · Furniture </p>
-            <h2>Free Delivery Within Linton University College Area</h2>
+            <body>
+                <div class="header">
+                    <h1><u>LIET Shop</u></h1>
+                    <p>Second Hand · Accessories · Furniture </p>
+                    <h2>Free Delivery Within Linton University College Area</h2>
 
-        </div>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <a href="#">
-                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-1.jpg" />
-                            <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-2.jpg" />
-                        </a>
-                        <span class="product-new-label">Sale</span>
-                        <span class="product-discount-label">20%</span>
-                    </div>
-                 
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">Women's Blouse</a></h3>
-                        <div class="price">$16.00
-                            <span>$20.00</span>
-                        </div>
-                        <a class="add-to-cart" href="">+ Add To Cart</a>
-                    </div>
                 </div>
+
+
+            <div class="container">
+                <ProductListGrid isLoading={isLoading} items={items}/>
             </div>
-        </div>
-    </div>
 
-    </body>
-  </Styles>
+            </body>
+        </Styles>
 
-)
+        )
+    }
