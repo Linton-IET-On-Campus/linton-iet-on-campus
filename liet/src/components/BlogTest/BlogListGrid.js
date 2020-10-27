@@ -7,7 +7,7 @@ const BlogListGrid = ({ items, isLoading }) => {
     return isLoading ? ( 
         <Spinner animation="grow" variant="warning" /> 
     ) : (
-        <div >
+        <div class="well">
             {items.map((item) => (
                     <BlogListItem key={item.id} item={item}></BlogListItem>
                 ))}

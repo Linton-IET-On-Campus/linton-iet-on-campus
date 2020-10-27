@@ -15,7 +15,9 @@ import { Job } from './pages/About/Job';
 import { Collaboration } from './pages/About/Collaboration';
 
 import { Event } from './pages/Event';
-import { Blog } from './pages/Blog';
+import { Blog } from './pages/Blog/Blog';
+import { SingleBlog } from './pages/Blog/SingleBlog';
+
 import { Shop } from './pages/Shop';
 
 
@@ -44,7 +46,9 @@ function App() {
           <Route path="/about/intern-job-opportunity" component={Job} />
           <Route path="/about/collaboration" component={Collaboration} />
 
-          <Route path="/blog" component={Blog} />
+          <Route exact path="/blog" component={Blog} />
+          <Route path="/blog/:slug" component={SingleBlog} />
+
           <Route path="/event" component={Event} />
           <Route path="/shop" component={Shop} />
           <Route path="/login" component={Login} />

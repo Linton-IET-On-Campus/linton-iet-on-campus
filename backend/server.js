@@ -46,6 +46,13 @@ app.use('/intern-job-opportunity', internRouter);
 const memoryRouter = require('./routes/memory')
 app.use('/memory-wall', memoryRouter);
 
+const blogRouter = require('./routes/blog')
+app.use('/blog', blogRouter);
+
+const contactRouter = require('./routes/contact')
+app.use('/contacts', contactRouter);
+
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });

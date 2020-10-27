@@ -1,18 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Contact from '../../components/Contact';
 import { Footer } from '../../components/Footer';
+import { Post } from '../../components/Blog/Post';
 import { NavigationBar } from '../../components/NavigationBar';
 
 const Styles = styled.div`
 
 `;
 
-export const Collaboration = () => (
+export const SingleBlog = () => (
     <Styles>
-        <NavigationBar />
-        <Contact />
+           <NavigationBar />
+
+        <br></br>
+
+        <Post />
+
         <Footer />
-    </Styles>
+
+  </Styles>
+
 )

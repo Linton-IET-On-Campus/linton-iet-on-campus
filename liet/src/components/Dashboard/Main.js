@@ -4,9 +4,13 @@ import { BrowserRouter as Router, Route, Switch, Link  } from 'react-router-dom'
 import logo from '../../assets/logo.png';
 
 import CreateCommittee from './Form/create-committee.component';
+import ContactList from "./contact-list";
+
 import CreateSHS from './Form/create-student-helps-student.component';
 import CreateIntern from './Form/create-intern-job-opportunity';
 import CreateMemory from './Form/create-memory';
+// import CreateBlog from './Form/create-blog';
+
 
 const Styles = styled.div`
 body {
@@ -94,6 +98,9 @@ main {
 }
 .menu ul li.icon-documents {
   background-image: url("http://www.entypo.com/images//documents.svg");
+}
+.menu ul li.icon-old-phone {
+  background-image: url("http://www.entypo.com/images//old-phone.svg");
 }
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -227,7 +234,9 @@ export const Main = () => (
     <li class="icon-graduation-cap"><a href="/dashboard/add-student-helps-student"><span>Student Helps Student</span></a></li>
     <li class="icon-documents"><a href="/dashboard/add-memory"><span>Memory Wall</span></a></li>
     <li class="icon-customers"><a href="/dashboard/add-intern-job-opportunity"><span>Intern/Job</span></a></li>
-    <li class="icon-publish"><a href="/dashboard/add-blog"><span>Blog</span></a></li>
+    {/* <li class="icon-publish"><a href="/dashboard/add-blog"><span>Blog</span></a></li> */}
+    <li class="icon-old-phone"><a href="/dashboard/collaboration"><span>Collaboration</span></a></li>
+
     <li class="icon-shop"><a href="/dashboard/add-shop"><span>Shop</span></a></li>
     <li class="icon-log-out"><a href="/login"><span>Logout</span></a></li>
   </ul>
@@ -241,7 +250,8 @@ export const Main = () => (
           <Route  path="/dashboard/add-student-helps-student" component={CreateSHS} />
           <Route  path="/dashboard/add-memory" component={CreateMemory} />
           <Route  path="/dashboard/add-intern-job-opportunity" component={CreateIntern} />
-          <Route  path="/dashboard/add-blog" component={CreateIntern} />
+          <Route  path="/dashboard/collaboration" component={ContactList} />
+          {/* <Route  path="/dashboard/add-blog" component={CreateBlog} /> */}
           <Route  path="/dashboard/add-shop" component={CreateIntern} />
 
         </Switch>

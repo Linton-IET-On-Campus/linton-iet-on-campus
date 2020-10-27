@@ -3,7 +3,7 @@ let Committee = require('../models/committee.model');
 
 router.route('/').get((req, res) => {
   Committee.find()
-    .then(committees => res.json(committees))
+    .then(committee => res.json(committee))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
