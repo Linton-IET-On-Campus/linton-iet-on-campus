@@ -75,7 +75,7 @@ export const ChoosePlan = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const  result = await axios(
-          `https://raw.githubusercontent.com/Linton-IET-On-Campus/linton-iet-on-campus/master/backend/data/choose-plan/index.json`
+          `https://raw.githubusercontent.com/Linton-IET-On-Campus/linton-iet-on-campus/master/server/data/choose-plan/index.json`
         )
         console.log(result.data)
 
