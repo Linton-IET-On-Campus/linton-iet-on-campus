@@ -40,11 +40,10 @@ h2{
 main {
   left: 100px;
   position: relative;
-  height: 100vh;
 }
 .menu {
   background: #EB891C;
-  height: 100vh;
+  height: 100%;
   width: 240px;
   position: fixed;
   top: 0;
@@ -121,10 +120,11 @@ main {
 }
 @media screen and (max-width: 900px) and (min-width: 400px) {
   body {
-    padding-left: 90px;
+    padding-left: 50px;
   }
   .menu {
     width: 90px;
+
   }
   .menu .avatar {
     padding: 0.5em;

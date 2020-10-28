@@ -38,6 +38,13 @@ body{
     .container{
         grid-template-columns: 100%;
     }
+    .header h1{
+      font-size:60px;
+      color: white;
+      margin-left: 0px;
+      text-align: center;
+    }
+    
   }
 
 .container> div{

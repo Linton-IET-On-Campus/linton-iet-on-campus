@@ -8,7 +8,8 @@ body{
 	font-family: Arial;
 	font-size: 12px;
 	background-color: white;
-	height: 500px;
+  height: 600px;
+  padding-top: 100px;
 	}
 
 	h1{
@@ -25,69 +26,9 @@ body{
 	}
 
 	label{
-	font-size: 10px;
+	font-size: 20px;
 	}
 
-
-	
-
-	@media only screen and (min-width: 600px)
-	{
-	body{
-	font-family: Arial;
-	font-size: 16px;
-	background-color: white;
-	margin-top: 150px;
-	}
-
-	h1{
-	font-size: 30px;
-	text-align: center;
-	}
-
-	.container{
-	background-color: #f2f2f2;
-	width: 70%;
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-	label{
-	font-size: 16px;
-	}
-	
-
-	@media only screen and (max-width: 800px)
-	{
-	body{
-	font-family: Arial;
-	font-size: 22px;
-	background-color: white;
-	margin-top: 150px;
-	}
-
-	h1{
-	font-size: 40px;
-	text-align: center;
-	}
-
-	.container{
-	background-color: #f2f2f2;
-	width: 70%;
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-	label{
-	font-size: 22px;
-	}
-
-
-
-
-	}
 
 `;
 

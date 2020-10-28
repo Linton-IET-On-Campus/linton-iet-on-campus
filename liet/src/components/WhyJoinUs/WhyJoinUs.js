@@ -270,7 +270,7 @@ export const WhyJoinUs = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const  result = await axios(
-          `https://linton-iet-on-campus.github.io/linton-iet-on-campus/backend/data/why-join-us/index.json`
+          `https://raw.githubusercontent.com/Linton-IET-On-Campus/linton-iet-on-campus/master/backend/data/why-join-us/index.json`
         )
         console.log(result.data)
 

@@ -11,6 +11,7 @@ const Styles = styled.div`
     .carousel{
         left: 0;
         width: 100%;
+        z-index:-1;
     }
     
     @media only screen and (max-width: 960px) {

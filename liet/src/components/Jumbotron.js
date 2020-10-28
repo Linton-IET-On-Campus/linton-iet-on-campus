@@ -34,7 +34,7 @@ const Styles = styled.div`
         white-space: nowrap;
         display: inline-block;
         position: relative;
-        animation-duration: 20s;
+        animation-duration: 15s;
         animation-timing-function: steps(36, end);
         animation-iteration-count: infinite;
       }
@@ -64,6 +64,12 @@ const Styles = styled.div`
         }
         50% {
           opacity: 1;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .short-description {
+          font-size:10px;
         }
       }
 

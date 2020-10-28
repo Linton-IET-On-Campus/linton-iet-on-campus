@@ -28,6 +28,7 @@ const Styles = styled.div`
         border-radius: .5rem;
       }
       
+    
 `;
 
 
