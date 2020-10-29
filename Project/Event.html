@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IET Event</title>
+	<style>
+		* {box-sizing: border-box}
+		.mySlides {display: none}
+		
+		.image {max-height: 600px;
+			 min-height: 500px;
+		}
+
+		h1{font-size: 30px;
+		   background-color: black;
+		   color: white;
+		   text-align: center;
+		}
+
+		body{
+			font-family: Arial;
+			font-size: 18px;
+			background-color: #FEF9E7;
+			margin: 0;
+			}
+
+		.container{
+			display: grid;
+			grid-template: auto/auto auto;
+			grid-gap: 20px;
+			width: 80%;
+			margin: auto;
+			padding: 20px;
+		}
+
+		.container > div{
+			padding: 15px;	
+			background-color: rgb(0,0,0,0.1);
+		}
+
+		/* unvisited link */
+		.a:link, .a:visited{
+		background-color: rgb(50, 163, 254);
+  		color: white;
+  		padding: 10px 20px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+		}
+
+		/* mouse over link */
+		.a:hover {
+  		color: white;
+  		background-color: rgb(50, 222, 254);
+		}
+
+		/* selected link */
+		.a:active {
+ 		 color: white;
+ 		 background-color: rgb(0,255,0);
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+  		max-width: 90%;
+  		width: auto;
+  		position: relative;
+  		margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next{
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+  		color: #f2f2f2;
+  		font-size: 30px;
+  		padding: 8px 12px;
+  		position: absolute;
+  		bottom: 8px;
+  		width: 100%;
+  		text-align: center;
+  		background-color: black;
+		}
+
+	</style>
+</head>
+<body>
+	<!--slides-->
+	<div class="slideshow-container">
+
+	<div class="mySlides">
+		<a href="https://www.w3schools.com/tags/att_img_width.asp"><img class="image" src="https://s3-ap-southeast-1.amazonaws.com/jomrun-images/cover_images/2019_03_07_cover_image_6zR79wQZ2iWUl54.jpg" style="width: 100%">
+		<div class="text">Click for more</div>
+		</a>
+	</div>
+
+	<div class="mySlides">
+		<a href="https://www.w3schools.com/tags/att_img_width.asp"><img class="image" src="https://pix10.agoda.net/hotelImages/2574356/-1/a98d632857d967b2bf1a625bcaa4de50.jpg?s=1024x768" style="width: 100%">
+		<div class="text">Click for more</div>
+		</a>
+	</div>
+
+	<div class="mySlides">
+		<a href="https://www.w3schools.com/tags/att_img_width.asp"><img class="image" src="https://www.angkongkeng.com/images/akk-zh-news/temples/selangor/slg-ampang-nantiangongkauongyah-building.jpg" style="width: 100%">
+		<div class="text">Click for more</div>
+		</a>
+	</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<div>
+		<hr>
+		<h2 style="text-align: center">IET recent events</h2>
+		<hr>
+	</div>
+
+	<div>
+		<h1>Ongoing events</h1>
+	</div>
+
+	<div class="container">
+		<div>
+			<img src="https://lh3.googleusercontent.com/ya_2WP4lzmks4Ms1Jar0H7WZ_RIE5naLGB2xcDg5u2a5BaTUmVOCsefZva-SVuHairg" width="100%">
+			<p>IET Event details...</p>
+			<a class="a" href="https://www.google.com/search?q=iet&oq=iet&aqs=chrome..69i57j0l2j69i59j0j69i60l2j69i61.4569j0j7&sourceid=chrome&ie=UTF-8">Register</a>
+		</div>
+		<div>
+			<img src="https://lh3.googleusercontent.com/ya_2WP4lzmks4Ms1Jar0H7WZ_RIE5naLGB2xcDg5u2a5BaTUmVOCsefZva-SVuHairg" width="100%">
+			<p>IET Event details...</p>
+			<a class="a" href="https://www.google.com/search?q=iet&oq=iet&aqs=chrome..69i57j0l2j69i59j0j69i60l2j69i61.4569j0j7&sourceid=chrome&ie=UTF-8">Register</a>
+		</div>
+		<div>
+			<img src="https://lh3.googleusercontent.com/ya_2WP4lzmks4Ms1Jar0H7WZ_RIE5naLGB2xcDg5u2a5BaTUmVOCsefZva-SVuHairg" width="100%">
+			<p>IET Event details...</p>
+			<a class="a" href="https://www.google.com/search?q=iet&oq=iet&aqs=chrome..69i57j0l2j69i59j0j69i60l2j69i61.4569j0j7&sourceid=chrome&ie=UTF-8">Register</a>
+		</div>
+		<div>
+			<img src="https://lh3.googleusercontent.com/ya_2WP4lzmks4Ms1Jar0H7WZ_RIE5naLGB2xcDg5u2a5BaTUmVOCsefZva-SVuHairg" width="100%">
+			<p>IET Event details...</p>
+			<a class="a" href="https://www.google.com/search?q=iet&oq=iet&aqs=chrome..69i57j0l2j69i59j0j69i60l2j69i61.4569j0j7&sourceid=chrome&ie=UTF-8">Register</a>
+		</div>
+	</div>
+	<div>
+		<h1>Previous events</h1>
+	</div>
+	<div class="container">
+		<div>
+			<img src="https://lh3.googleusercontent.com/ya_2WP4lzmks4Ms1Jar0H7WZ_RIE5naLGB2xcDg5u2a5BaTUmVOCsefZva-SVuHairg" width="100%">
+			<p>IET Event details...</p>
+			<a class="a" href="https://www.google.com/search?q=iet&oq=iet&aqs=chrome..69i57j0l2j69i59j0j69i60l2j69i61.4569j0j7&sourceid=chrome&ie=UTF-8">View</a>
+		</div>
+		<div>
+			<img src="https://lh3.googleusercontent.com/ya_2WP4lzmks4Ms1Jar0H7WZ_RIE5naLGB2xcDg5u2a5BaTUmVOCsefZva-SVuHairg" width="100%">
+			<p>IET Event details...</p>
+			<a class="a" href="https://www.google.com/search?q=iet&oq=iet&aqs=chrome..69i57j0l2j69i59j0j69i60l2j69i61.4569j0j7&sourceid=chrome&ie=UTF-8">View</a>
+		</div>
+		<div>
+			<img src="https://lh3.googleusercontent.com/ya_2WP4lzmks4Ms1Jar0H7WZ_RIE5naLGB2xcDg5u2a5BaTUmVOCsefZva-SVuHairg" width="100%">
+			<p>IET Event details...</p>
+			<a class="a" href="https://www.google.com/search?q=iet&oq=iet&aqs=chrome..69i57j0l2j69i59j0j69i60l2j69i61.4569j0j7&sourceid=chrome&ie=UTF-8">View</a>
+		</div>
+		<div>
+			<img src="https://lh3.googleusercontent.com/ya_2WP4lzmks4Ms1Jar0H7WZ_RIE5naLGB2xcDg5u2a5BaTUmVOCsefZva-SVuHairg" width="100%">
+			<p>IET Event details...</p>
+			<a class="a" href="https://www.google.com/search?q=iet&oq=iet&aqs=chrome..69i57j0l2j69i59j0j69i60l2j69i61.4569j0j7&sourceid=chrome&ie=UTF-8">View</a>
+		</div>
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+  		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+  		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+  	var i;
+  	var slides = document.getElementsByClassName("mySlides");
+  	if (n > slides.length) {slideIndex = 1}    
+  	if (n < 1) {slideIndex = slides.length}
+  	for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  	}
+  	slides[slideIndex-1].style.display = "block";  
+	}
+</script>
+
+</body>
+</html>
