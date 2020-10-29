@@ -1,7 +1,9 @@
 # <div align="center">Linton IET on Campus Official Website</div> 
 
+<div align="center">
 ![](https://img.shields.io/badge/Status-Completed-red?style=for-the-badge)
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W61L27Z)
+</div> 
 
 <br/>
 
