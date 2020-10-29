@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/Status-Completed-red?style=for-the-badge)
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W61L27Z)
 
-...
+<br/>
 
 ## 🏛️ Hall of Fame
 
@@ -17,7 +17,7 @@
 - Passport JS authentication
 - Admin dashboard
 
-...
+<br/>
 
 ## 💻 Technology used
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces!
@@ -29,9 +29,9 @@
 * [VS Code](https://code.visualstudio.com/) - awesome web-based text editor
 * [markdown-it](https://guides.github.com/features/mastering-markdown/) - Markdown parser done right. Fast and easy to extend.
 
-...
+<br/>
 
-### Installation
+## Installation
 
 ### This website requires [Node.js](https://nodejs.org/) v4+ to run.
 
@@ -63,17 +63,19 @@ $ npm start
 
 The server will start at http://localhost:5000
 
-...
+<br/>
+
 
 ## 📝 License
 
 MIT
 
-...
+<br/>
+
 
 **This website is built by Linton IET on Campus committees & mostly built by Hovah!**
 
-...
+<br/>
 
 ### Like this website? You can show your appreciation by buying Hovah a coffee ☕
 <a target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/hovahyii">
