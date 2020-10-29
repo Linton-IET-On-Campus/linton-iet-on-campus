@@ -1,6 +1,4 @@
-# Linton IET on Campus Official Website 
----
-:+1: :sparkles: :camel: :tada::rocket: :metal: :octocat: 
+# <div align="center">Linton IET on Campus Official Website</div> 
 
 ![](https://img.shields.io/badge/powered-react-181717?style=for-the-badge&logo=react)
 
