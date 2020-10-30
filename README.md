@@ -66,10 +66,17 @@ The server will start at http://localhost:5000
 
 ## To connect to MongoDB Atlas
 You have to create a .env file
-```sh
+```
 ATLAS_URI=
 ```
 
+<br/>
+
+## To register an account
+Go to
+```
+http://localhost:3000/register
+```
 <br/>
 
 ## 📝 License
@@ -77,7 +84,6 @@ ATLAS_URI=
 MIT
 
 <br/>
-
 
 **This website is built by Linton IET on Campus committees & mostly built by Hovah!**
 
