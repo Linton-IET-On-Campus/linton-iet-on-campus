@@ -70,6 +70,8 @@ You have to create a .env file
 ATLAS_URI=
 ```
 
+<br/>
+
 ## 📝 License
 
 MIT
