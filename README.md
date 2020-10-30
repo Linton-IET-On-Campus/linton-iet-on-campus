@@ -60,11 +60,15 @@ $ cd server
 $ npm install 
 $ npm start
 ```
-
 The server will start at http://localhost:5000
 
 <br/>
 
+## To connect to MongoDB Atlas
+You have to create a .env file
+```sh
+ATLAS_URI=
+```
 
 ## 📝 License
 
