@@ -7,7 +7,7 @@ const Styles = styled.div`
     
     .navbar{
         z-index: 15;
-
+        text-align: justify;
     }
 
     .navbar-brand, .navbar-nav .nav-link {
@@ -30,7 +30,7 @@ const Styles = styled.div`
         visibility: inherit;
     }
     .kfds-srf-height-s {
-        height: 35px;
+        height: 30px;
     }
     .kfds-srf-rounded {
         border-radius: 100px !important;
@@ -41,7 +41,7 @@ const Styles = styled.div`
         flex-direction: row;
         align-items: center;
         background-color: #ff5f5f;
-        height: 35px;
+        height: 30px;
         color: #fff;
         padding: 8px 16px;
         border-radius: 8px;
@@ -73,6 +73,12 @@ const Styles = styled.div`
         overflow: visible;
     }
 
+    @media (max-width: 1350px) and (min-width: 990px) {
+        .kfds-lyt-width-47 {
+            width: 100%;
+        }
+    
+      }
 `;
 
 export const NavigationBar = () => (
