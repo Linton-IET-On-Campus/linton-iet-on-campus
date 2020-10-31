@@ -228,7 +228,12 @@ main {
     pointer-events: none;
   }
 }
-
+@media screen and (max-width: 1400px) {
+  main {
+    padding-left: 150px;
+  }
+  
+}
 
 `;
 

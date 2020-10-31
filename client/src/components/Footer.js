@@ -31,7 +31,7 @@ export const Footer = () => (
           <Col md={4}>
             <h4>Linton IET on Campus</h4>
             <ul className="list-unstyled">
-              <li><a href="https://www.facebook.com/LintonIETOnCampus" target="_blank"><i className="fab fa-facebook-square fa-2x"></i></a> <a href="https://www.facebook.com/LintonIETOnCampus" target="_blank"><i className="fas fa-envelope-square  fa-2x"></i></a></li>
+              <li><a href="https://www.facebook.com/LintonIETOnCampus" target="_blank"><i className="fab fa-facebook-square fa-2x"></i></a> <a href="mailto:hovahyii@gmail.com" target="_blank"><i className="fas fa-envelope-square  fa-2x"></i></a></li>
               <li>Empowered by LUC students</li>
               <li>Since 2020</li>
 
