@@ -76,6 +76,8 @@ const Styles = styled.div`
     @media (max-width: 1350px) and (min-width: 990px) {
         .kfds-lyt-width-47 {
             width: 100%;
+            margin: auto;
+
         }
     
       }
