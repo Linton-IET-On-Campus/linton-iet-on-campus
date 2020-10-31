@@ -30,7 +30,7 @@ const Styles = styled.div`
         visibility: inherit;
     }
     .kfds-srf-height-s {
-        height: 46px;
+        height: 35px;
     }
     .kfds-srf-rounded {
         border-radius: 100px !important;
@@ -41,7 +41,7 @@ const Styles = styled.div`
         flex-direction: row;
         align-items: center;
         background-color: #ff5f5f;
-        height: 46px;
+        height: 35px;
         color: #fff;
         padding: 8px 16px;
         border-radius: 8px;
