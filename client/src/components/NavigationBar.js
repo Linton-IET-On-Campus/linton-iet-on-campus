@@ -21,35 +21,57 @@ const Styles = styled.div`
     .navbar-collapse {
         flex-grow: 0.5 !important;
     }
-
+   
+    .kfds-btn-primary:hover {
+        color: #fff;
+        background-color: #ff4646;
+    }
     .kfds-c-show-web-to-ipad-only {
         visibility: inherit;
     }
     .kfds-srf-height-s {
         height: 46px;
     }
-   
+    .kfds-srf-rounded {
+        border-radius: 100px !important;
+    }
     .kfds-btn-primary {
         display: flex;
         justify-content: center;
         flex-direction: row;
         align-items: center;
         background-color: #ff5f5f;
-        height: 30px;
+        height: 46px;
         color: #fff;
         padding: 8px 16px;
-        border-radius: 10px;
+        border-radius: 8px;
         border: none;
         transition: color .15s ease-in-out 0s,background-color .15s ease-in-out 0s;
     }
-    
-    .support{
-        text-align: right;
-        float: right
+    .kfds-lyt-width-47 {
+        width: 15vw;
     }
-
-    
-    
+    .kfds-font-bold {
+        font-weight: 700;
+    }
+    .kfds-left-mrgn-16 {
+        margin-left: 16px;
+    }
+    input, button, select, textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+    button, html input[type="button"], input[type="reset"], input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+    button, select {
+        text-transform: none;
+    }
+    button {
+        overflow: visible;
+    }
 
 `;
 
