@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from "axios";
-import ProductListGrid from './ProductListGrid';
+import ProductListGrid from '../ProductListGrid';
 import 'font-awesome/css/font-awesome.min.css';
 
 
