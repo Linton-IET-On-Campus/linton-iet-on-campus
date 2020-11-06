@@ -18,7 +18,11 @@ export default class EditExercise extends Component {
     this.onChangeTitle = this.onChangeTitle.bind(this);
     this.onChangeDiscountPrice = this.onChangeDiscountPrice.bind(this);
     this.onChangeOriginalPrice = this.onChangeOriginalPrice.bind(this);
+    this.onChangeDescription = this.onChangeDescription.bind(this);
+    this.onChangeDetails = this.onChangeDetails.bind(this);
+    this.onChangeStock = this.onChangeStock.bind(this);
     this.onChangeSeller = this.onChangeSeller.bind(this);
+    this.onChangeWhatsapp = this.onChangeWhatsapp.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     
     this.state = {
@@ -29,7 +33,11 @@ export default class EditExercise extends Component {
         title: '',
         discountPrice: '',
         originalPrice: '',
+        description: '',
+        details: '',
+        stock: '',
         seller: '',
+        whatsapp: '',
     }
   }
 
@@ -44,7 +52,11 @@ export default class EditExercise extends Component {
             title: response.data.title,
             discountPrice: response.data.discountPrice,
             originalPrice: response.data.originalPrice,
+            description: response.data.description,
+            details: response.data.details,
+            stock: response.data.stock,
             seller: response.data.seller,
+            whatsapp: response.data.whatsapp
         })   
       })
       .catch(function (error) {
@@ -96,9 +108,34 @@ export default class EditExercise extends Component {
     })
   }
 
+  onChangeDescription(e) {
+    this.setState({
+        description: e.target.value
+    })
+  }
+ 
+  onChangeDetails(e) {
+    this.setState({
+        details: e.target.value
+    })
+  }
+
+  onChangeStock(e) {
+    this.setState({
+        stock: e.target.value
+    })
+  }
+
+
   onChangeSeller(e) {
     this.setState({
         seller: e.target.value
+    })
+  }
+
+  onChangeWhatsapp(e) {
+    this.setState({
+        whatsapp: e.target.value
     })
   }
 
@@ -114,7 +151,11 @@ export default class EditExercise extends Component {
         title: this.state.title,
         discountPrice: this.state.discountPrice,
         originalPrice: this.state.originalPrice,
-        seller: this.state.seller
+        description: this.state.description,
+        details: this.state.details,
+        stock: this.state.stock,
+        seller: this.state.seller,
+        whatsapp: this.state.whatsapp
     }
 
     console.log(product);
@@ -199,12 +240,49 @@ export default class EditExercise extends Component {
               />
         </div>
         <div className="form-group">
+          <label>Details: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.details}
+              onChange={this.onChangeDetails}
+              />
+        </div>
+        <div className="form-group">
+          <label>Description: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.description}
+              onChange={this.onChangeDescription}
+              />
+        </div>
+
+        <div className="form-group">
+          <label>Stock: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.stock}
+              onChange={this.onChangeStock}
+              />
+        </div>
+        <div className="form-group">
           <label>Seller: </label>
           <input 
               type="text" 
               className="form-control"
               value={this.state.seller}
               onChange={this.onChangeSeller}
+              />
+        </div>
+        <div className="form-group">
+          <label>Whatsapp: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.whatsapp}
+              onChange={this.onChangeWhatsapp}
               />
         </div>
         <div className="form-group">

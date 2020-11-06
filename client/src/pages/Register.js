@@ -6,6 +6,7 @@ import Axios from "axios";
 import styled from 'styled-components';
 
 const Styles = styled.div`
+
 @media all and (min-width: 480px) {
     .Login {
       padding: 60px 0;
@@ -20,10 +21,6 @@ const Styles = styled.div`
   .img{
       padding: 100px;
   }
-
-
-
-
 
 `;
 

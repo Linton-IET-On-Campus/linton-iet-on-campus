@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductListItem = ({ item }) => {
   return (
@@ -19,7 +20,7 @@ const ProductListItem = ({ item }) => {
                 <div class="price">{item.discountPrice}
                     <span>{item.originalPrice}</span>
                 </div>
-                <a className="btn btn-warning" href={item.seller} target="_blank">📞 Contact Seller</a>
+                <Link className="btn btn-warning" key={item._id} to={"/product/" + item._id}>View Product</Link>
             </div>
         </div>
     </div>

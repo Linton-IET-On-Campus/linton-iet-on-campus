@@ -19,7 +19,8 @@ import { Event } from './pages/Event';
 import { Blog } from './pages/Blog/Blog';
 import { SingleBlog } from './pages/Blog/SingleBlog';
 
-import { Shop } from './pages/Shop';
+import { Shop } from './pages/Shop/Shop';
+import { Product } from './pages/Shop/Product';
 
 
 import { Login } from './pages/Login';
@@ -51,7 +52,9 @@ function App() {
           <Route path="/blog/:slug" component={SingleBlog} />
 
           <Route path="/event" component={Event} />
-          <Route path="/shop" component={Shop} />
+          <Route path="/shop" component={Shop}/>
+          <Route  path="/product/:id"  component={Product} />
+
           <Route path="/login" component={Login} />
           <Route  path="/dashboard" component={Dashboard} />
 

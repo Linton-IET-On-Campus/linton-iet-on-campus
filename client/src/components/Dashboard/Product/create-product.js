@@ -18,7 +18,12 @@ export default class CreateProduct extends Component {
     this.onChangeTitle = this.onChangeTitle.bind(this);
     this.onChangeDiscountPrice = this.onChangeDiscountPrice.bind(this);
     this.onChangeOriginalPrice = this.onChangeOriginalPrice.bind(this);
+    this.onChangeDescription = this.onChangeDescription.bind(this);
+    this.onChangeDetails = this.onChangeDetails.bind(this);
+    this.onChangeStock = this.onChangeStock.bind(this);
     this.onChangeSeller = this.onChangeSeller.bind(this);
+    this.onChangeWhatsapp = this.onChangeWhatsapp.bind(this);
+
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
@@ -29,7 +34,11 @@ export default class CreateProduct extends Component {
         title: '',
         discountPrice: '',
         originalPrice: '',
+        description: '',
+        details: '',
+        stock: '',
         seller: '',
+        whatsapp: '',
     }
   }
 
@@ -90,12 +99,35 @@ onChangeImageOne(e) {
     })
   }
 
+  onChangeDescription(e) {
+    this.setState({
+        description: e.target.value
+    })
+  }
+ 
+  onChangeDetails(e) {
+    this.setState({
+        details: e.target.value
+    })
+  }
+
+  onChangeStock(e) {
+    this.setState({
+        stock: e.target.value
+    })
+  }
+
   onChangeSeller(e) {
     this.setState({
         seller: e.target.value
     })
   }
 
+  onChangeWhatsapp(e) {
+    this.setState({
+        whatsapp: e.target.value
+    })
+  }
 
   onSubmit(e) {
     e.preventDefault();
@@ -108,7 +140,12 @@ onChangeImageOne(e) {
         title: this.state.title,
         discountPrice: this.state.discountPrice,
         originalPrice: this.state.originalPrice,
-        seller: this.state.seller
+        description: this.state.description,
+        details: this.state.details,
+        stock: this.state.stock,
+        seller: this.state.seller,
+        whatsapp: this.state.whatsapp
+
     }
 
     console.log(product);
@@ -210,12 +247,48 @@ onChangeImageOne(e) {
               />
         </div>
         <div className="form-group">
+          <label>Description: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.description}
+              onChange={this.onChangeDescription}
+              />
+        </div>
+        <div className="form-group">
+          <label>Details: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.details}
+              onChange={this.onChangeDetails}
+              />
+        </div>
+        <div className="form-group">
+          <label>Stock: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.stock}
+              onChange={this.onChangeStock}
+              />
+        </div>
+        <div className="form-group">
           <label>Seller: </label>
           <input 
               type="text" 
               className="form-control"
               value={this.state.seller}
               onChange={this.onChangeSeller}
+              />
+        </div>
+        <div className="form-group">
+          <label>Whatsapp: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.whatsapp}
+              onChange={this.onChangeWhatsapp}
               />
         </div>
         <div className="form-group">

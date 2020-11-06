@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import axios from "axios";
-import ProductListGrid from './ProductListGrid';
-import 'font-awesome/css/font-awesome.min.css';
 
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import styled from 'styled-components';
 
 const Styles = styled.div`
 
@@ -137,27 +136,63 @@ body{
 
 `;
 
+const Product = props => (
+
+<div class="col-md-3 col-sm-6">
+    <div class="product-grid">
+        <div class="product-image">
+            <a href="#">
+                <img class="pic-1" src={props.product.imgOne} />
+                <img class="pic-2" src={props.product.imgTwo} />
+            </a>
+            <span class="product-new-label">{props.product.label}</span>
+            <span class="product-discount-label">{props.product.discount}</span>
+        </div>
+    
+        <div class="product-content">
+            <h3 class="title"><a href="#">{props.product.title}</a></h3>
+            <div class="price">{props.product.discountPrice}
+                <span>{props.product.originalPrice}</span>
+            </div>
+            <Link to={"/product/"+props.product._id} className="btn btn-warning" >View Product</Link>    
+        </div>
+    </div>
+</div>
+
+)
+  
 
     
-export const ShopList = () => {
+export default class FullProductList extends Component {
 
-    const [items, setItems] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
-  
-    useEffect(() => {
-      const fetchItems = async () => {
-        const  result = await axios(
-            `http://localhost:5000/products/`
-          )
-          console.log(result.data)
-  
-          setItems(result.data)
-          setIsLoading(false)
-        }
-        fetchItems()
-      },[])
+    constructor(props) {
+        super(props);
+    
+        this.state = {products: []};
+      }
+    
+        componentDidMount() {
+        axios.get('http://localhost:5000/products/')
+          .then(response => {
+            this.setState({ products: response.data })
+          })
+          .catch((error) => {
+            console.log(error);
+          })
 
-      return(
+      }
+
+
+      productList() {
+        return this.state.products.map(currentproduct => {
+          return <Product product={currentproduct} key={currentproduct._id}/>;
+        })
+
+        
+      }
+
+      render() {
+        return (
             <Styles>
 
             <body>
@@ -179,7 +214,9 @@ export const ShopList = () => {
 
 
             <div class="container">
-                    <ProductListGrid isLoading={isLoading} items={items}/>
+                <div class="row">
+                    { this.productList() }
+                </div>
             </div>
 
             </body>
@@ -187,3 +224,5 @@ export const ShopList = () => {
 
         )
     }
+  }
+  

@@ -19,7 +19,12 @@ const Product = props => (
     <td>{props.product.title}</td>
     <td>{props.product.discountPrice}</td>
     <td>{props.product.originalPrice}</td>
+    <td>{props.product.description}</td>
+    <td>{props.product.details}</td>
+    <td>{props.product.stock}</td>
     <td>{props.product.seller}</td>
+    <td>{props.product.whatsapp}</td>
+
     <td>
       <Link to={"/dashboard/shop/edit/"+props.product._id}>edit</Link> | <a href="#" onClick={() => { props.deleteProduct(props.product._id) }}>delete</a>
     </td>
@@ -82,7 +87,12 @@ export default class ProductsList extends Component {
               <th>Title</th>
               <th>Discount Price</th>
               <th>Original Price</th>
+              <th>Description</th>
+              <th>Details</th>
+              <th>Stock</th>
               <th>Seller</th>
+              <th>WhatsApp</th>
+
             </tr>
           </thead>
           <tbody>

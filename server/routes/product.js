@@ -15,7 +15,11 @@ router.route('/add').post((req, res) => {
   const title = req.body.title;
   const discountPrice = req.body.discountPrice;
   const originalPrice = req.body.originalPrice;
+  const details = req.body.details;
+  const description = req.body.description;
+  const stock = req.body.stock;
   const seller = req.body.seller;
+  const whatsapp = req.body.whatsapp;
 
   const newProduct = new Product({
     
@@ -26,7 +30,11 @@ router.route('/add').post((req, res) => {
     title,
     discountPrice,
     originalPrice,
+    details,
+    description,
+    stock,
     seller,
+    whatsapp
    
   });
 
@@ -57,7 +65,11 @@ router.route('/update/:id').post((req, res) => {
         product.title = req.body.title;
         product.discountPrice = req.body.discountPrice;
         product.originalPrice = req.body.originalPrice;
+        product.details = req.body.details;
+        product.description = req.body.description;
+        product.stock = req.body.stock;
         product.seller = req.body.seller;
+        product.whatsapp = req.body.whatsapp;
 
         product.save()
         .then(() => res.json('Product updated!'))

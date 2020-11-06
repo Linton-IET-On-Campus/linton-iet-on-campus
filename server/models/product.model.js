@@ -11,7 +11,11 @@ const productSchema = new Schema({
     title: { type: String, required: true },
     discountPrice: { type: String, required: true },
     originalPrice: { type: String, required: true },
+    details: { type: String, required: true },
+    description: { type: String, required: true },
+    stock: { type: String, required: true },
     seller: { type: String, required: true },
+    wahtsapp: { type: String, required: true },
 
   
 }, {
