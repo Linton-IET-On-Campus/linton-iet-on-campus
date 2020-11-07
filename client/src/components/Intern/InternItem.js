@@ -3,7 +3,7 @@ import React from 'react'
 const InternItem = ({ item }) => {
   return (
 
-        <div>
+        <div class="border">
 
             <img src={item.img} align="left"/>
 
@@ -20,7 +20,7 @@ const InternItem = ({ item }) => {
             <strong>ABOUT: </strong><br/>{item.description}<br/><br/>
 
             <a class="a" href={item.link}>LEARN MORE...</a>
-
+         
         </div>
   )
 }

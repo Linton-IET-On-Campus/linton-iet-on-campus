@@ -23,7 +23,7 @@ app.use(session({
 app.use(express.json());
 app.use(cookieParser("secretcode"))
 
-const uri = process.env.ATLAS_URI;
+const uri = process.env.MONGODB_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true}
 );
 const connection = mongoose.connection;

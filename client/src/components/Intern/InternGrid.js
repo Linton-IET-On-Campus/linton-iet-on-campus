@@ -7,7 +7,7 @@ const InternGrid = ({ items, isLoading }) => {
     return isLoading ? ( 
         <Spinner animation="grow" variant="warning" /> 
     ) : (
-        <div >
+        <div class="row">
             {items.map((item) => (
                     <InternItem key={item.id} item={item}></InternItem>
                 ))}

@@ -14,15 +14,15 @@ body{
 .container{
     display: grid;
     grid-template: auto/100%;
-    grid-gap: 20px;
-    width: 90%;
+    grid-gap: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
     margin: auto;
+
 }
 
 .container > div{
-    border-radius: 15px;
-    padding: 15px;	
-    background-color: rgb(0,0,0,0.7);
 }
 /*container settings for description box*/
 
@@ -76,9 +76,17 @@ p{
     word-wrap: break-word;
 }
 
-.move-left{
-    margin: 20px;
+
+
+
+.border{
+  padding: 30px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgb(0,0,0,0.7);
+
 }
+
 
 `;
 
