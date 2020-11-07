@@ -15,7 +15,7 @@ const productSchema = new Schema({
     description: { type: String, required: true },
     stock: { type: String, required: true },
     seller: { type: String, required: true },
-    wahtsapp: { type: String, required: true },
+    whatsapp: { type: String, required: true },
 
   
 }, {
